@@ -1,0 +1,67 @@
+@import url('https://fonts.cdnfonts.com/css/visitor');
+
+/* remove annoying stuff */
+p, h1{
+    line-height: normal;
+}
+
+
+/* font family */
+div{
+    font-family: "Visitor TT2 BRK";
+}
+h1{
+    font-family: "Visitor TT1 BRK";
+}
+
+/* debug */
+.red{
+    border: 2px red solid;
+}
+.blue{
+    border: 2px blue solid;
+}
+
+
+/* colours */
+.color-red{
+    color: #FF0E0E;
+}
+
+.color-orange{
+    color: #FF833D;
+}
+
+/* font sizes */
+.size-60{
+    font-size: 4vw;
+}
+.size-40{
+    font-size: 2.5vw;
+}
+.size-30{
+    font-size: 2vw;
+}
+
+@media only screen and (max-width: 500px){
+    .size-60{
+        font-size: 14vw;
+    }
+    .size-40{
+        font-size: 7vw;
+    }
+    .size-30{
+        font-size: 6vw;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 900px){
+    .size-60{
+        font-size: 9vw;
+    }
+    .size-40{
+        font-size: 5vw;
+    }
+    .size-30{
+        font-size: 3vw;
+    }
+}

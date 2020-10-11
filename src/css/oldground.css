@@ -1,0 +1,48 @@
+
+@keyframes moving-ground{
+    from{
+        background-position-x: 0px;
+    }
+    to{
+        background-position-x: -128px;
+    }
+}
+
+@keyframes moving-ground-mobile{
+    from{
+        background-position-x: 0px;
+    }
+    to{
+        background-position-x: -64px;
+    }
+}
+
+.ground-tile{
+    background-image: url(/assets/ground1.png);
+    background-repeat: repeat-x;
+    /* position: absolute;
+    bottom: 0; */
+    background-size: cover;
+    height: 64px;
+    width: 64px;
+    animation: moving-ground 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2);
+    margin-left: -1px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 500px){
+    .ground-tile{
+        height: 32px;
+    }
+
+    @keyframes moving-ground{
+        from{
+            background-position-x: 0px;
+        }
+        to{
+            background-position-x: -64px;
+        }
+    }
+}

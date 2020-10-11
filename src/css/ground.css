@@ -1,0 +1,24 @@
+@keyframes moving-ground{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100vw);
+    }
+}
+
+.ground{
+    background-image: url('/assets/ground.png');
+    background-repeat: repeat-x;
+    width: 100vw;
+    height: 8vh;
+    bottom: 0;
+    background-size: contain;
+    animation: moving-ground 8s linear forwards;
+}
+
+@media only screen and (max-width: 500px){
+    .ground{
+        height: 6vh;
+    }
+}

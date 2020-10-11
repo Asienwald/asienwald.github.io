@@ -1,0 +1,73 @@
+@keyframes top-to-down{
+    0%{
+        margin-top: -60vh;
+    }
+    80%{
+        margin-top: -20vh;
+    }
+    90%{
+        margin-top: -24vh;
+    }
+    100%{
+        margin-top: -20vh;
+    }
+}
+
+@keyframes appear{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+.home-panel{
+    background-image: url("/assets/menu_panel.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 90vh;
+    margin-top: -20vh;
+
+    padding: 6vh 6vw;
+    animation: top-to-down 0.8s ease-out forwards;
+}
+
+
+
+.start-btn{
+    background-color: #007C75;
+    color: white;
+    opacity: 0%;
+    animation: appear 0.8s ease-in forwards;
+    animation-delay: 1.2s;
+}
+
+@media only screen and (max-width: 500px){
+    .home-panel{
+        background-image: url("/assets/menu_panel_mobile.png");
+        margin-top: -15vh;
+        padding: 8vh 18vw;
+    }
+
+    @keyframes top-to-down{
+        0%{
+            margin-top: -60vh;
+        }
+        80%{
+            margin-top: -15vh;
+        }
+        90%{
+            margin-top: -20vh;
+        }
+        100%{
+            margin-top: -15vh;
+        }
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 900px){
+    .home-panel{
+        padding: 12vh 10vw;
+    }
+}
