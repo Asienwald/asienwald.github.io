@@ -1,38 +1,44 @@
 import React from 'react';
+import {BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
-// components
-import Background from './components/common/background';
-import Parallax from './components/common/parallax';
-
-import Player from './components/common/player';
-import Panel from './components/common/panel';
-
-import Ground from './components/common/ground';
+// pages
+import HomePage from './components/pages/home';
+import NotFound from './components/pages/notfound';
+import WorldMapPage from './components/pages/worldmap';
+import AboutMePage from './components/pages/aboutme';
 
 function App() {
   return (
     <div className="App">
 
-      <Panel></Panel>
+      <Router basename={process.env.PUBLIC_URL}>
+        <Switch>
+          <Route
+            exact = {true}
+            path = "/"
+            component = {HomePage}
+          />
 
-      <Player isCenter={true} isRunning={true}>
-      
-      </Player>
+          <Route
+            exact
+            path = "/worldmap"
+            component = {WorldMapPage}
+          />
 
-      {/* <Ground isMoving={false}></Ground> */}
-      <Ground 
-        style={{overflow: "hidden"}}
-        moving={true}
-      ></Ground>
-      
-      <Background
-        moving={true}
-      ></Background>
+          <Route
+            exact
+            path = "/aboutme"
+            component = {AboutMePage}
+          />
 
+          <Route
+            component = {NotFound}
+          />
+        </Switch>
 
-      {/* <Parallax image={"/assets/forest_parallax_4_small.png"} index={7} moving={true} /> */}
+      </Router>
 
     </div>
   );

@@ -1,0 +1,36 @@
+.player-stat .player{
+    position: static !important;
+    margin: 0 auto;
+    /* margin-left: 3.2vw; */
+}
+
+.player-stat{
+    padding: 5vw;
+}
+
+.orange-panel{
+    width: 100%;
+    height: 100%;
+    background-color: #921C1C;
+    border: 4px solid #FF9696;
+    padding: 2vw;
+}
+
+.tab{
+    margin-left: 5vw;
+}
+
+ul{
+   font-size: 0; 
+   margin: 0;
+   padding: 0 1vw;
+}
+ul li{
+    font-size: 1.8vw;
+    line-height: normal;
+    white-space: nowrap;
+}
+.player-skills li{
+    white-space: normal;
+    margin: 1vh 0;
+}

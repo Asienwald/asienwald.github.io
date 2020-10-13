@@ -9,14 +9,16 @@
 
 .parallax{
     background-repeat: repeat-x;
+    min-height: -webkit-fill-available;
     height: 100vh;
     width: 100vw;
     background-size: contain;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     animation-name: moving-parallax;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
     z-index: -1;
     /* border: 2px solid red; */
 }

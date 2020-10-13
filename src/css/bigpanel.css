@@ -1,0 +1,70 @@
+@keyframes big-top-to-down{
+    0%{
+        margin-top: -60vh;
+    }
+    80%{
+        margin-top: 0vh;
+    }
+    90%{
+        margin-top: -4vh;
+    }
+    100%{
+        margin-top: -0vh;
+    }
+}
+
+.big-panel{
+    background-image: url("/assets/menu_panel_big.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 85vh;
+    padding-top: 8vh;
+    animation: big-top-to-down 0.8s ease-out forwards;
+}
+
+@media only screen and (max-width: 500px){
+    @keyframes big-top-to-down{
+        0%{
+            margin-top: -60vh;
+        }
+        80%{
+            margin-top: -10vh;
+        }
+        90%{
+            margin-top: -14vh;
+        }
+        100%{
+            margin-top: -10vh;
+        }
+    }
+
+    .big-panel{
+        background-image: url("/assets/menu_panel_mobile.png");
+        margin-top: -10vh;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 1080px){
+    @keyframes big-top-to-down{
+        0%{
+            margin-top: -60vh;
+        }
+        80%{
+            margin-top: -10vh;
+        }
+        90%{
+            margin-top: -14vh;
+        }
+        100%{
+            margin-top: -5vh;
+        }
+    }
+    .big-panel{
+        background-image: url("/assets/menu_panel_tablet.png");
+        background-size: cover;
+        height: 85vh;
+        margin-top: -5vh;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 1600px)

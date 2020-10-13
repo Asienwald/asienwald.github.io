@@ -1,0 +1,16 @@
+.menu{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 10px solid #3067B9;
+    margin-right: 10vw;
+    margin-top: 5vh;
+    min-height: 80vh;
+    margin-bottom: 10vh !important;
+}
+
+@media only screen and (max-width: 500px){
+    .menu{
+        margin: 0 auto;
+        margin-top: 5vh;
+        border: 6px solid #3067B9;
+    }
+}

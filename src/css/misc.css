@@ -4,6 +4,41 @@
 p, h1{
     line-height: normal;
 }
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration: none;
+}
+
+/* animations */
+@keyframes fade-in{
+    0%{
+        opacity: 0%;
+    }
+    66%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes blink-anim{
+    0%{
+        border: 3px solid #FF833D;
+    }25%{
+        border: 3px solid transparent;
+    }
+    50%{
+        border: 3px solid #FF833D;
+    }100%{
+        border: 3px solid transparent;
+    }
+}
+
+.blink{
+    animation: blink-anim 1s steps(1) forwards;
+    animation-fill-mode: none;
+    /* animation-iteration-count: 2; */
+    opacity: 100% !important;
+}
 
 
 /* font family */
@@ -31,21 +66,52 @@ h1{
 .color-orange{
     color: #FF833D;
 }
+.color-green{
+    color: #00FF57;
+}
+.color-purple{
+    color: #A282FF;
+}
+.color-lightblue{
+    color: #00E0FF;
+}
 
 /* font sizes */
 .size-60{
     font-size: 4vw;
 }
+.size-50{
+    font-size: 3.2vw;
+}
+.size-45{
+    font-size: 2.8vw;
+}
 .size-40{
     font-size: 2.5vw;
+}
+.size-35{
+    font-size: 2.3vw;
 }
 .size-30{
     font-size: 2vw;
 }
+.size-25{
+    font-size: 1.6vw;
+}
+.size-20{
+    font-size: 1vw;
+}
+
 
 @media only screen and (max-width: 500px){
     .size-60{
         font-size: 14vw;
+    }
+    .size-50{
+        font-size: 10vw;
+    }
+    .size-45{
+        font-size: 8vw;
     }
     .size-40{
         font-size: 7vw;
@@ -53,15 +119,42 @@ h1{
     .size-30{
         font-size: 6vw;
     }
+    .size-20{
+        font-size: 3vw;
+    }
 }
 @media only screen and (min-width: 501px) and (max-width: 900px){
     .size-60{
         font-size: 9vw;
+    }
+    .size-50{
+        font-size: 8vw;
+    }
+    .size-45{
+        font-size: 6vw;
     }
     .size-40{
         font-size: 5vw;
     }
     .size-30{
         font-size: 3vw;
+    }
+    .size-20{
+        font-size: 2vw;
+    }
+}
+@media only screen and (min-width: 1600px) and (max-width: 2100px){
+    .size-50{
+        font-size: 3.5vw;
+    }
+}
+@media only screen and (min-width: 2100px) and (max-width: 3100px){
+    .size-50{
+        font-size: 4vw;
+    }
+}
+@media only screen and (min-width: 3100px){
+    .size-50{
+        font-size: 4vw;
     }
 }

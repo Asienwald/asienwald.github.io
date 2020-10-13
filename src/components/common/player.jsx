@@ -1,33 +1,23 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 
 import "../../css/player.css";
 
 
 
-class Player extends Component {
-    constructor(props){
-        super(props);
+function Player(props) {
+    const [isCenter, setIsCenter] = useState(props.isCenter);
+    const [isRunning, setIsRunning] = useState(props.isRunning);
+    const [invert, setInvert] = useState(props.invert);
 
-        this.state = {
-            isCenter: this.props.isCenter,
-            isRunning: this.props.isRunning,
-            invert: false
-        };
-    }
-
-
-
-    render() {
-        return (
-            <div className = {
-                (this.state.isCenter) ? "player center-middle" : "player"
-            } style={{
-                animationName: (this.state.isRunning)? "animate-running": "animate-idle",
-                transform: `scaleX(${(this.state.invert?-1:1)})`
-            }}>
-            </div>
-        );
-    }
+    return (
+        <div className = {
+            (isCenter) ? "player center-middle" : "player"
+        } style={{
+            animationName: (isRunning)? "animate-running": "animate-idle",
+            transform: `scaleX(${(invert?-1:1.1)})`
+        }}>
+        </div>
+    );
 }
 
 export default Player;

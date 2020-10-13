@@ -1,5 +1,7 @@
 {
-  "name": "new-website",
+  "name": "asienwald.github.io",
+  "description": "personal site for kar wei",
+  "author": "Loh Kar Wei <asienwald@gmail.com>",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://Asienwald.github.io/",
