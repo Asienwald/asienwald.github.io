@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/visitor');
 
 /* remove annoying stuff */
-p, h1{
+p, h1, h2{
     line-height: normal;
 }
 a, a:hover, a:active, a:visited, a:focus {
@@ -59,6 +59,7 @@ a, a:hover, a:active, a:visited, a:focus {
     width: 40vw;
     cursor: pointer;
     z-index: 2;
+    filter: invert(31%) sepia(93%) saturate(6360%) hue-rotate(351deg) brightness(101%) contrast(115%);
 }
 .back-world:hover{
     filter: invert(45%) sepia(73%) saturate(4113%) hue-rotate(1deg) brightness(102%) contrast(107%);
@@ -88,6 +89,18 @@ h1{
     border: 2px blue solid;
 }
 
+/* list styles */
+ul{
+    font-size: 0; 
+    margin: 0;
+    padding: 0 1vw;
+ }
+ ul li{
+     font-size: 1.8vw;
+     line-height: normal;
+     white-space: nowrap;
+ }
+
 
 /* colours */
 .color-red{
@@ -105,6 +118,15 @@ h1{
 }
 .color-lightblue{
     color: #00E0FF;
+}
+.color-grey{
+    color: #BDBBBB;
+}
+.color-blue{
+    color: #5B87F8;
+}
+.color-cyan{
+    color: #02FFF0;
 }
 
 /* font sizes */
@@ -137,6 +159,9 @@ h1{
 @media only screen and (max-width: 500px){
     .title{
         text-align: center !important;
+    }
+    ul li{
+        font-size: 5vw;
     }
     .size-60{
         font-size: 14vw;
@@ -183,6 +208,9 @@ h1{
 @media only screen and (min-width: 501px) and (max-width: 900px){
     .title{
         text-align: center !important;
+    }
+    ul li{
+        font-size: 3vw;
     }
     .size-60{
         font-size: 9vw;
@@ -234,7 +262,7 @@ h1{
 }
 @media only screen and (min-width: 2000px) and (max-width: 3000px){
     .size-50{
-        font-size: 4vw;
+        font-size: 3vw;
     }
 }
 @media only screen and (min-width: 3000px){

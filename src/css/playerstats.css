@@ -6,7 +6,7 @@
 
 .player-stat{
     /* padding: 5vw; */
-    padding: 2vw 5vw 2vw 5vw;
+    /* padding: 2vw 5vw 2vw 5vw; */
 }
 
 .orange-panel{
@@ -21,7 +21,7 @@
     margin-left: 5vw;
 }
 
-ul{
+/* ul{
    font-size: 0; 
    margin: 0;
    padding: 0 1vw;
@@ -30,24 +30,24 @@ ul li{
     font-size: 1.8vw;
     line-height: normal;
     white-space: nowrap;
-}
+} */
 .player-skills li{
     white-space: normal;
     margin: 1vh 0;
 }
 
 @media only screen and (max-width: 500px){
-    ul li{
+    /* ul li{
         font-size: 5vw;
-    }
+    } */
     .player-skills{
         margin-top: 3vh;
     }
 }
 @media only screen and (min-width: 501px) and (max-width: 900px){
-    ul li{
+    /* ul li{
         font-size: 3vw;
-    }
+    } */
     .player-skills{
         margin-top: 2vh;
     }

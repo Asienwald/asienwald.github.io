@@ -3,6 +3,15 @@ import { useHistory } from 'react-router-dom';
 import '../../../css/misc.css';
 import '../../../css/worldmap.css';
 
+const circleStyle = {
+    backgroundColor: "#E0E0E0",
+    borderRadius: "50%",
+    display: "inline-block",
+    position: "relative",
+    height: "4vw",
+    width: "4vw"
+}
+
 function Map(props) {
 
     const history = useHistory();
@@ -15,14 +24,15 @@ function Map(props) {
         <div className="map">
             <h1 className="mt-5 size-50 color-red">world map</h1>
 
-            <div className="row text-white mx-5 map-links">
+            <div className="row text-white mx-3 map-links">
                 <div className="col-12 col-lg-6">
                     <div className="row">
                         <div className="col-12">
-                        <div className="d-flex flex-row map-link mt-4"
+                            <div className="d-flex flex-row map-link mt-4"
                                 onClick = {() => {jumpTo("")}}
                             >
-                                <div className="circle-point">
+                                <div className="circle-point"
+                                style={circleStyle}>
                                     <div className="circle-point-inside"></div>
                                 </div>
                                 <p className="size-45 my-auto ml-4">Home</p>
@@ -30,7 +40,8 @@ function Map(props) {
                             <div className="d-flex flex-row map-link mt-4"
                                 onClick = {() => {jumpTo("aboutme")}}
                             >
-                                <div className="circle-point">
+                                <div className="circle-point"
+                                style={circleStyle}>
                                     <div className="circle-point-inside"></div>
                                 </div>
                                 <p className="size-45 my-auto ml-4">about me</p>
@@ -39,7 +50,8 @@ function Map(props) {
                             <div className="d-flex flex-row map-link mt-4"
                                 onClick = {() => {jumpTo("education")}}
                             >
-                                <div className="circle-point">
+                                <div className="circle-point"
+                                style={circleStyle}>
                                     <div className="circle-point-inside"></div>
                                 </div>
                                 <p className="size-45 my-auto ml-4">education</p>
@@ -48,7 +60,8 @@ function Map(props) {
                             <div className="d-flex flex-row map-link mt-4"
                                 onClick = {() => {jumpTo("experience")}}
                             >
-                                <div className="circle-point">
+                                <div className="circle-point"
+                                style={circleStyle}>
                                     <div className="circle-point-inside"></div>
                                 </div>
                                 <p className="size-45 my-auto ml-4">experience</p>
@@ -57,7 +70,8 @@ function Map(props) {
                             <div className="d-flex flex-row map-link mt-4"
                                 onClick = {() => {jumpTo("achievements")}}
                             >
-                                <div className="circle-point">
+                                <div className="circle-point"
+                                style={circleStyle}>
                                     <div className="circle-point-inside"></div>
                                 </div>
                                 <p className="size-45 my-auto ml-4">achievements</p>
@@ -73,7 +87,8 @@ function Map(props) {
                             <div className="d-flex flex-row map-link mt-4"
                                 onClick = {() => {jumpTo("projects")}}
                             >
-                                <div className="circle-point">
+                                <div className="circle-point"
+                                style={circleStyle}>
                                     <div className="circle-point-inside"></div>
                                 </div>
                                 <p className="size-45 my-auto ml-4">projects</p>
@@ -81,16 +96,18 @@ function Map(props) {
                             <div className="d-flex flex-row map-link mt-4"
                                 onClick = {() => {jumpTo("aboutthissite")}}
                             >
-                                <div className="circle-point">
+                                <div className="circle-point"
+                                style={circleStyle}>
                                     <div className="circle-point-inside"></div>
                                 </div>
-                                <p className="size-45 my-auto ml-4">about this site</p>
+                                <p className="size-45 my-auto ml-4">about site</p>
                             </div>
 
                             <div className="d-flex flex-row map-link mt-4"
                                 onClick = {() => {jumpTo("findme")}}
                             >
-                                <div className="circle-point">
+                                <div className="circle-point"
+                                style={circleStyle}>
                                     <div className="circle-point-inside"></div>
                                 </div>
                                 <p className="size-45 my-auto ml-4">find me</p>

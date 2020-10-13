@@ -1,3 +1,5 @@
+
+
 .circle-point{
     height: 4vw;
     width: 4vw;
@@ -47,8 +49,8 @@
         margin: 2vh 0 !important;
     }
     .circle-point{
-        height: 8vw;
-        width: 8vw;
+        height: 8vw !important;
+        width: 8vw !important;
     }
     .circle-point-inside{
         height: 4vw;
@@ -70,6 +72,15 @@
     }
     .map-link{
         margin: 3vh;
+    }
+    .circle-point{
+        height: 3vw !important;
+        width: 3vw !important;
+    }
+    .circle-point-inside{
+        height: 1.5vw;
+        width: 1.5vw;
+        margin: -0.75vw 0 0 -0.75vw;
     }
 }
 @media only screen and (min-width: 3000px){

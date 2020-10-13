@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
+import {HashRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
@@ -8,8 +8,8 @@ import HomePage from './components/pages/home';
 import NotFound from './components/pages/notfound';
 import WorldMapPage from './components/pages/worldmap';
 import AboutMePage from './components/pages/aboutme';
+import EducationPage from './components/pages/education'
 
-import PageWrapper from './components/common/pagewrapper';
 
 function App() {
   return (
@@ -33,6 +33,12 @@ function App() {
             exact
             path = "/aboutme"
             component = {AboutMePage}
+          />
+
+          <Route
+            exact
+            path = "/education"
+            component = {EducationPage}
           />
 
           <Route

@@ -54,7 +54,7 @@
         }
     }
     .home-panel{
-        background-image: url("/assets/menu_panel_mobile.png");
+        background-image: url("/assets/menu_panel_tablet.png");
         margin-top: -15vh;
         padding: 8vh 18vw;
     }
