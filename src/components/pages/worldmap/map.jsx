@@ -12,7 +12,7 @@ function Map(props) {
     }
 
     return (
-        <div>
+        <div className="map">
             <h1 className="mt-5 size-50 color-red">world map</h1>
 
             <div className="row text-white mx-5 map-links">

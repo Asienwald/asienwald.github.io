@@ -9,12 +9,18 @@ function Player(props) {
     const [isRunning, setIsRunning] = useState(props.isRunning);
     const [invert, setInvert] = useState(props.invert);
 
+    
+
     return (
         <div className = {
             (isCenter) ? "player center-middle" : "player"
         } style={{
             animationName: (isRunning)? "animate-running": "animate-idle",
-            transform: `scaleX(${(invert?-1:1.1)})`
+            transform: `scaleX(${() => {
+                if(invert) return -1;
+                else if(invert && isRunning) return 1;
+                else return 1.1;
+            }})`
         }}>
         </div>
     );

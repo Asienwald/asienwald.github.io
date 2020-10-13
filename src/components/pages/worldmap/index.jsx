@@ -5,12 +5,16 @@ import Player from '../../common/player';
 import Menu from '../../common/menu';
 import Map from './map';
 
+import PageWrapper from '../../common/pagewrapper';
+
 function WorldMapPage(props) {
+    const TransitionedMenu = PageWrapper(Menu);
+
     return (
         <div>
-            <Menu>
+            <TransitionedMenu>
                 <Map/>
-            </Menu>
+            </TransitionedMenu>
 
             <Environment
                 moving = {false}
@@ -22,7 +26,6 @@ function WorldMapPage(props) {
                 invert = {true}
             />
                
-            
         </div>
     );
 }

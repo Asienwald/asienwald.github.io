@@ -40,6 +40,37 @@ a, a:hover, a:active, a:visited, a:focus {
     opacity: 100% !important;
 }
 
+/* title styling */
+.title{
+
+}
+.hide{
+    display: none !important;
+}
+.show{
+    display: block !important;
+}
+
+/* back button style */
+.back-world{
+    position: fixed;
+    top: 3vh;
+    left: 3vw;
+    width: 40vw;
+    cursor: pointer;
+    z-index: 2;
+}
+.back-world:hover{
+    filter: invert(45%) sepia(73%) saturate(4113%) hue-rotate(1deg) brightness(102%) contrast(107%);
+}
+.back-world-icon{
+    background-image: url('/assets/back_white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 3vw;
+    height: 3vw;
+}
+
 
 /* font family */
 div{
@@ -104,6 +135,9 @@ h1{
 
 
 @media only screen and (max-width: 500px){
+    .title{
+        text-align: center !important;
+    }
     .size-60{
         font-size: 14vw;
     }
@@ -116,14 +150,40 @@ h1{
     .size-40{
         font-size: 7vw;
     }
+    .size-35{
+        font-size: 6.6vw;
+    }
     .size-30{
         font-size: 6vw;
+    }
+    .size-25{
+        font-size: 4vw;
     }
     .size-20{
         font-size: 3vw;
     }
+    .back-world{
+        position: fixed;
+        left: initial;
+        bottom: 8vh;
+        right: 20vw;
+        top: initial;
+    }
+    .back-world-icon{
+        width: 8vw;
+        height: 8vw;
+    }
+    .back-world p{
+        padding: 0;
+        margin: auto 0 !important;
+        margin-left: 2vw !important;
+        font-size: 5vw !important;
+    }
 }
 @media only screen and (min-width: 501px) and (max-width: 900px){
+    .title{
+        text-align: center !important;
+    }
     .size-60{
         font-size: 9vw;
     }
@@ -136,25 +196,52 @@ h1{
     .size-40{
         font-size: 5vw;
     }
+    .size-35{
+        font-size: 4.5vw;
+    }
     .size-30{
         font-size: 3vw;
+    }
+    .size-25{
+        font-size: 2.8vw;
     }
     .size-20{
         font-size: 2vw;
     }
+
+    .back-world{
+        position: fixed;
+        left: initial;
+        top: initial;
+        bottom: 10vh;
+        right: 20vw;
+    }
+    .back-world-icon{
+        width: 5vw;
+        height: 5vw;
+    }
+    .back-world p{
+        padding: 0;
+        margin: auto 0 !important;
+        margin-left: 2vw !important;
+        font-size: 4vw !important;
+    }
 }
-@media only screen and (min-width: 1600px) and (max-width: 2100px){
+@media only screen and (min-width: 1500px) and (max-width: 2000px){
     .size-50{
         font-size: 3.5vw;
     }
 }
-@media only screen and (min-width: 2100px) and (max-width: 3100px){
+@media only screen and (min-width: 2000px) and (max-width: 3000px){
     .size-50{
         font-size: 4vw;
     }
 }
-@media only screen and (min-width: 3100px){
+@media only screen and (min-width: 3000px){
     .size-50{
         font-size: 4vw;
+    }
+    .title{
+        margin-top: 0 !important;
     }
 }

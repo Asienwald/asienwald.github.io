@@ -18,12 +18,17 @@
     left: 50%;
     margin: -1.2vw 0 0 -1.2vw;
 }
-
+.map-link{
+    cursor: pointer;
+}
 .map-link p{
     white-space: nowrap;
 }
-.map-link:active .circle-point-inside{
+.map-link:hover .circle-point-inside{
     background-color: #ED2114;
+}
+.map-link:hover p{
+    color: #ED2114;
 }
 
 /* fixed height for menu for worldmap */
@@ -51,7 +56,7 @@
         margin: -2vw 0 0 -2vw;
     }
 }
-@media only screen and (min-width: 1600px) and (max-width: 2100px){
+@media only screen and (min-width: 1600px) and (max-width: 2000px){
     .map-link{
         margin: 3vh 0;
     }
@@ -59,7 +64,7 @@
         margin-top: 5vh;
     }
 }
-@media only screen and (min-width: 2100px){
+@media only screen and (min-width: 2000px){
     .map-links{
         margin: 5vh 5vw !important;
     }
@@ -67,8 +72,8 @@
         margin: 3vh;
     }
 }
-@media only screen and (min-width: 3100px){
-    .size-50{
+@media only screen and (min-width: 3000px){
+    .map .size-50{
         margin-top: 5vh !important;
     }
 }

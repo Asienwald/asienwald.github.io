@@ -3,13 +3,16 @@ import Environment from '../../common/environment';
 import Menu from '../../common/menu';
 import Player from '../../common/player';
 import PlayerStats from './playerstats';
+import PageWrapper from '../../common/pagewrapper';
 
 function AboutMePage(props) {
+    const TransitionedMenu = PageWrapper(Menu);
+
     return (
         <div>
-            <Menu>
+            <TransitionedMenu>
                 <PlayerStats/>
-            </Menu>
+            </TransitionedMenu>
 
             <Player
                 isCenter = {false}
@@ -18,6 +21,7 @@ function AboutMePage(props) {
 
             <Environment
                 moving = {true}
+                showBack = {true}
             />
         </div>
     );

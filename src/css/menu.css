@@ -5,6 +5,7 @@
     margin-top: 5vh;
     min-height: 80vh;
     margin-bottom: 10vh !important;
+    padding: 2vh 0;
 }
 
 @media only screen and (max-width: 500px){
@@ -12,5 +13,6 @@
         margin: 0 auto;
         margin-top: 5vh;
         border: 6px solid #3067B9;
+        padding-bottom: 6vh;
     }
 }

@@ -9,6 +9,8 @@ import NotFound from './components/pages/notfound';
 import WorldMapPage from './components/pages/worldmap';
 import AboutMePage from './components/pages/aboutme';
 
+import PageWrapper from './components/common/pagewrapper';
+
 function App() {
   return (
     <div className="App">

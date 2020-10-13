@@ -12,10 +12,11 @@ function Panel(props) {
         >start</a>);
 
     const goToWorldMap = () => {
-        setStartBtn(<a 
-            className="start-btn size-40 mb-2 mt-3 blink"
-            onAnimationEnd={() => {history.push("/worldmap")}}
-        >start</a>)
+        // setStartBtn(<a 
+        //     className="start-btn size-40 mb-2 mt-3 blink"
+        //     onAnimationEnd={() => {history.push("/worldmap")}}
+        // >start</a>)
+        history.push("/worldmap");
     }
 
     return (

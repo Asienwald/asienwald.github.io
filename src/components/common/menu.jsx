@@ -3,6 +3,8 @@ import '../../css/misc.css';
 import '../../css/menu.css';
 
 function Menu(props) {
+
+    
     return (
         <div className="container-fluid">
             <div className="row">
