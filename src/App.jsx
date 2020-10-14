@@ -9,6 +9,7 @@ import NotFound from './components/pages/notfound';
 import WorldMapPage from './components/pages/worldmap';
 import AboutMePage from './components/pages/aboutme';
 import EducationPage from './components/pages/education'
+import ExperiencePage from './components/pages/experience';
 
 
 function App() {
@@ -39,6 +40,12 @@ function App() {
             exact
             path = "/education"
             component = {EducationPage}
+          />
+
+          <Route
+            exact
+            path = "/experience"
+            component = {ExperiencePage}
           />
 
           <Route

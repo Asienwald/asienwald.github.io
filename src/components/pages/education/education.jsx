@@ -63,6 +63,7 @@ function Education(props) {
                     bulletPoints = {[
                         "raw l1r5 - 6",
                         "top scorer (cchy) 2018",
+                        "8 distinctions"
                     ]}
                 />}
                 ccaList = {[
