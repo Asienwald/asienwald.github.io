@@ -53,7 +53,7 @@ function Ground() {
     // spawn ground again when moving changes
     useEffect(() => {
         spawnGround();
-    }, [moving])
+    }, [moving, window.innerWidth])
 
 
     return (

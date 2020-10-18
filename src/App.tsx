@@ -39,9 +39,13 @@ const LocationManager: React.FC = () => {
         changeMovingEnv(false, false, true);
         dispatch(AllActions.EnvActions.setBackWorld(false));
         break;
-      default:
-        changeMovingEnv(true, false, true);
+      case "/aboutme": case "/education": case "/experience":
+        changeMovingEnv(true, false, false);
         dispatch(AllActions.EnvActions.setBackWorld(true));
+        break;
+      default:
+        changeMovingEnv(false, true, true);
+        dispatch(AllActions.EnvActions.setBackWorld(false));
     }
   }, [location])
 

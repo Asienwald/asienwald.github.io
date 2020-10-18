@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import Environment from '../common/environment';
 import Menu from '../common/menu';
-import Player from '../common/player';
 
 
 const PageWithContent: React.FC = ({children}) => {

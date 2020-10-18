@@ -1,6 +1,5 @@
 import React from 'react';
-import Environment from '../../common/environment';
-import Player from '../../common/player';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Menu from '../../common/menu';
 import Map from './map';
 
@@ -12,13 +11,19 @@ function WorldMapPage() {
 
     return (
         <div>
-            <TransitionedMenu>
-                <Map/>
-            </TransitionedMenu>
 
-            {/* <Environment/>
-
-            <Player/> */}
+            <ReactCSSTransitionGroup
+                transitionAppear = {true}
+                transitionAppearTimeout = {600}
+                transitionEnterTimeout={600}
+                transitionLeaveTimeout={200}
+                transitionName={'PopIn'}
+            >
+                <Menu>
+                    <Map/>
+                </Menu>
+                
+            </ReactCSSTransitionGroup>
                
         </div>
     );

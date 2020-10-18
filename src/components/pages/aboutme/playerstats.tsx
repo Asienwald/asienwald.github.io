@@ -13,7 +13,7 @@ function PlayerStats() {
             <Title text="player stats"/>
             <div className="row">
                 <div className="col-12 col-lg-4 text-center">
-                    <Player/>
+                    <Player inMenu={true}/>
                     <p className="mt-4 size-50 color-red">Lv. 1</p>
                 </div>
                 <div className="col-12 col-lg-8">
@@ -65,11 +65,11 @@ function PlayerStats() {
                         <div className="row px-3">
                             <div className="col-12 col-md-6">
                                 <ul>
-                                    <li>reactjs</li>
-                                    <li>ui/ux design</li>
+                                    <li>reactjs/Typescript</li>
+                                    <li>Redux</li>
                                     <li>android studio</li>
-                                    <li>unity</li>
-                                    <li>nodejs</li>
+                                    <li>Unity with C#</li>
+                                    <li>Express</li>
                                     <li>python</li>
                                 </ul>
                             </div>

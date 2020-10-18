@@ -1,10 +1,14 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 import "../../css/player.css";
 import { IEnvState } from '../../types/interfaces';
 
-const Player: React.FC = () => {
+interface IPlayerProps{
+    inMenu?: boolean
+}
+
+const Player: React.FC<IPlayerProps> = ({inMenu}) => {
 
     const [isCenter, isRunning, invert] = useSelector((state: IEnvState) => {
         return [state.env.playerCenter, state.env.moving, state.env.playerInvert]
@@ -15,7 +19,7 @@ const Player: React.FC = () => {
         <div className = {
             (isCenter) ? "player center-middle" : "player"
         } style={{
-            animationName: (isRunning)? "animate-running": "animate-idle",
+            animationName: (isRunning && !inMenu)? "animate-running": "animate-idle",
             transform: `scaleX(${() => {
                 if(invert) return -1;
                 else if(invert && isRunning) return 1;

@@ -72,6 +72,7 @@
     }
     .map-link{
         margin: 3vh;
+        margin-left: 1vh;
     }
     .circle-point{
         height: 3vw !important;
