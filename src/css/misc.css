@@ -8,6 +8,15 @@ a, a:hover, a:active, a:visited, a:focus {
     text-decoration: none;
 }
 
+/* for fonts */
+@font-face{
+    font-family: khyay;
+    src: url("/font/Khyay-Regular.ttf");
+}
+.khyay{
+    font-family: khyay;
+}
+
 /* animations */
 @keyframes fade-in{
     0%{
@@ -121,6 +130,9 @@ ul{
 }
 .color-lightblue{
     color: #00E0FF;
+}
+.color-darkgrey{
+    color: #575757;
 }
 .color-grey{
     color: #BDBBBB;

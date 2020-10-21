@@ -1,13 +1,13 @@
 import React, { Component, useEffect, useState } from 'react';
 import '../../css/background.css';
-import {IParallax} from './../../types/interfaces'
+import {AppState, IParallax} from './../../types/interfaces'
 import {useSelector} from 'react-redux'
 import {IEnvState} from '../../types/interfaces'
 
 const Parallax: React.FC<IParallax> = ({image, index, children}) => {
     const [bg, setBg] = useState<JSX.Element[]>([]);
 
-    const moving = useSelector((state: IEnvState) => {
+    const moving = useSelector((state: AppState) => {
         return state.env.moving
     })
 

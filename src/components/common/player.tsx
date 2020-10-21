@@ -2,7 +2,7 @@ import React, { Component, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 import "../../css/player.css";
-import { IEnvState } from '../../types/interfaces';
+import { AppState, IEnvState } from '../../types/interfaces';
 
 interface IPlayerProps{
     inMenu?: boolean
@@ -10,7 +10,7 @@ interface IPlayerProps{
 
 const Player: React.FC<IPlayerProps> = ({inMenu}) => {
 
-    const [isCenter, isRunning, invert] = useSelector((state: IEnvState) => {
+    const [isCenter, isRunning, invert] = useSelector((state: AppState) => {
         return [state.env.playerCenter, state.env.moving, state.env.playerInvert]
     })
 

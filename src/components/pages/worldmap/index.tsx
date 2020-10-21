@@ -2,17 +2,15 @@ import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Menu from '../../common/menu';
 import Map from './map';
-
-import PageWrapper from '../../common/pagewrapper';
+import PageWithContent from '../pagewithcontent';
 
 
 function WorldMapPage() {
-    const TransitionedMenu = PageWrapper(Menu);
 
     return (
         <div>
 
-            <ReactCSSTransitionGroup
+            {/* <ReactCSSTransitionGroup
                 transitionAppear = {true}
                 transitionAppearTimeout = {600}
                 transitionEnterTimeout={600}
@@ -23,7 +21,17 @@ function WorldMapPage() {
                     <Map/>
                 </Menu>
                 
-            </ReactCSSTransitionGroup>
+            </ReactCSSTransitionGroup> */}
+
+            {/* <AnimatePresence exitBeforeEnter>
+                <Menu>
+                    <Map/>
+                </Menu>
+            </AnimatePresence> */}
+
+            <PageWithContent>
+                <Map/>
+            </PageWithContent>
                
         </div>
     );

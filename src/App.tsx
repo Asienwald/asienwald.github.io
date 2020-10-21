@@ -10,10 +10,12 @@ import AboutMePage from './components/pages/aboutme';
 import EducationPage from './components/pages/education'
 import ExperiencePage from './components/pages/experience';
 import Environment from './components/common/environment';
+import AchievemmentsPage from './components/pages/achievements';
 
 import Player from './components/common/player'
 import { useDispatch } from 'react-redux';
 import { AllActions } from './actions';
+import AchievementsModal from './components/pages/achievements/achievementsmodal';
 
 
 const LocationManager: React.FC = () => {
@@ -39,7 +41,7 @@ const LocationManager: React.FC = () => {
         changeMovingEnv(false, false, true);
         dispatch(AllActions.EnvActions.setBackWorld(false));
         break;
-      case "/aboutme": case "/education": case "/experience":
+      case "/aboutme": case "/education": case "/experience": case "/achievements":
         changeMovingEnv(true, false, false);
         dispatch(AllActions.EnvActions.setBackWorld(true));
         break;
@@ -68,41 +70,42 @@ function App() {
               path = "/"
               component = {HomePage}
             />
-
             <Route
               exact
               path = "/worldmap"
               component = {WorldMapPage}
             />
-
             <Route
               exact
               path = "/aboutme"
               component = {AboutMePage}
             />
-
             <Route
               exact
               path = "/education"
               component = {EducationPage}
             />
-
             <Route
               exact
               path = "/experience"
               component = {ExperiencePage}
             />
-
+            <Route
+              exact
+              path = "/achievements"
+              component = {AchievemmentsPage}
+            />
             <Route
               component = {NotFound}
-            />
-
-          
+            />       
         </Switch>
 
         <Player/>
 
         <Environment/>
+
+        {/* for modals */}
+        <AchievementsModal/>
 
       </Router>
 

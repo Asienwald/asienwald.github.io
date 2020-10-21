@@ -1,4 +1,4 @@
-import { CHANGE_ENV, CHANGE_MOVING, SET_BACKWORLD, SET_PLAYER_CENTER, SET_PLAYER_INVERT } from "../actions/actiontypes";
+import { CHANGE_ENV, CHANGE_MOVING, SET_ACHIEVEMENT_MODAL, SET_BACKWORLD, SET_PLAYER_CENTER, SET_PLAYER_INVERT } from "../actions/actiontypes";
 
 export interface IParallax{
     image: string,
@@ -27,21 +27,46 @@ export interface IPosition{
     descriptionList: string[]
 }
 
+export interface ICarouselSection{
+    title: string,
+    carouselItems: IAchievement[]
+}
+
+// export interface IAchievement{
+//     imageUrl: string,
+//     awardTitle: string,
+//     awardOrg: string,
+//     descripList: string[]
+// }
+
+export interface IAchievement{
+    isVisible?: boolean
+    imageUrl: string,
+    issueDate: string,
+    title: string,
+    issuedBy: string,
+    descripList: string[]
+}
+
 
 export interface AppState{
-    env: IEnvState
+    env: IEnvState,
+    modal: IModalState
+}
+
+export interface IModalState{
+    achievementModal: IAchievement
 }
 
 export interface IEnvState{
-    env: {
-        moving: boolean
-        playerCenter: boolean
-        envBg: string
-        backToWorld: boolean
-        playerInvert: boolean
-    }
+    moving: boolean
+    playerCenter: boolean
+    envBg: string
+    backToWorld: boolean
+    playerInvert: boolean
 }
 
+// env actions
 export interface IChangeMovingAction{
     type: typeof CHANGE_MOVING,
     payload: boolean
@@ -68,3 +93,11 @@ export interface ISetPlayerInvert{
 }
 
 export type TEnvActionTypes = IChangeMovingAction | IChangeEnvAction | ISetPlayerCenter | ISetBackWorld | ISetPlayerInvert;
+
+// modal actions
+export interface ISetAchievementModal{
+    type: typeof SET_ACHIEVEMENT_MODAL,
+    payload: IAchievement
+}
+
+export type TModalActionTypes = ISetAchievementModal;

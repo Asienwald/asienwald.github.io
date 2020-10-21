@@ -1,7 +1,8 @@
-import { IChangeEnvAction, IChangeMovingAction, ISetBackWorld, ISetPlayerCenter, ISetPlayerInvert } from '../types/interfaces';
+import { IAchievement, IChangeEnvAction, IChangeMovingAction, ISetAchievementModal, ISetBackWorld, ISetPlayerCenter, ISetPlayerInvert } from '../types/interfaces';
 import  './actiontypes';
-import { CHANGE_ENV, CHANGE_MOVING, SET_BACKWORLD, SET_PLAYER_CENTER, SET_PLAYER_INVERT } from './actiontypes';
+import { CHANGE_ENV, CHANGE_MOVING, SET_ACHIEVEMENT_MODAL, SET_BACKWORLD, SET_PLAYER_CENTER, SET_PLAYER_INVERT } from './actiontypes';
 
+// env actions
 function changeMoving(payload: boolean) : IChangeMovingAction{
     return {
         type: CHANGE_MOVING,
@@ -37,6 +38,28 @@ function setPlayerInvert(payload: boolean): ISetPlayerInvert{
     }
 }
 
+// modal actions
+function setAchievementModalVisible(payload: IAchievement): ISetAchievementModal{
+    return{
+        type: SET_ACHIEVEMENT_MODAL,
+        payload
+    }
+}
+
+function setAchievementModalNotVisible():ISetAchievementModal{
+    return{
+        type: SET_ACHIEVEMENT_MODAL,
+        payload: {
+            isVisible: false,
+            imageUrl: "",
+            issuedBy: "",
+            issueDate: "",
+            title: "",
+            descripList: []
+        }
+    }
+}
+
 export const AllActions = {
     EnvActions: {
         changeMoving,
@@ -44,5 +67,9 @@ export const AllActions = {
         setPlayerCenter,
         setBackWorld,
         setPlayerInvert
+    },
+    ModalActions: {
+        setAchievementModalVisible,
+        setAchievementModalNotVisible
     }
 }

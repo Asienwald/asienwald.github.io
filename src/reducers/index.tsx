@@ -1,13 +1,14 @@
 import { combineReducers } from 'redux'
 import { AppState } from '../types/interfaces';
 import envReducer from './envReducers'
+import modalReducer from './modalReducers';
 
-// combineReducers function returns empty initial state
-// const rootReducer = combineReducers({
-//     envReducer
-// })
 
-const rootReducer = envReducer;
+const rootReducer = combineReducers({
+    env: envReducer,
+    modal: modalReducer
+})
+
 
 export default rootReducer;
 

@@ -1,0 +1,84 @@
+.carousel-section{
+    min-height: 45vh;
+}
+
+.carousel-section hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #02FFF0;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2vh;
+}
+
+.carousel-btn{
+    display: block;
+    width: 100%;
+    max-height: 5vh;
+    width: auto;
+    margin-top: -1vh;
+    cursor: pointer;
+}
+
+.page-container{
+    padding: 0 !important;
+    width: 56vw !important;
+    height: 40vh !important;
+}
+.page-container:first-child{
+    transform: translateX(0) !important;
+}
+
+.card{
+    overflow: hidden;
+    padding: 0;
+}
+
+.card .card-img{
+    width: auto;
+    height: auto;
+    max-height: 20vh;
+    overflow: hidden;
+    border: 5px solid #6C6C6C;
+    vertical-align: middle;
+}
+.card-img img{
+    width: 100%;
+    height: auto;
+}
+
+.indicator-wrapper{
+    min-width: 5vw;
+    min-height: 5vh;
+    position: relative;
+}
+
+
+@media only screen and (max-width: 500px){
+    .carousel-section{
+        min-height: 80vh;
+    }
+    .card{
+        margin-top: 3vh;
+    }
+    .page-container{
+        min-width: 78vw !important;
+        min-height: 70vh !important;
+    }
+    .card-col{
+        padding: 0;
+    }
+
+    .indicator-wrapper{
+        min-width: 30vw;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 900px){
+    .page-container{
+        min-width: 70vw !important;
+    }
+    .indicator-wrapper{
+        min-width: 20vw;
+    }
+}

@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'framer-motion';
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Menu from '../common/menu';
@@ -6,7 +7,7 @@ import Menu from '../common/menu';
 const PageWithContent: React.FC = ({children}) => {
     return (
         <div>
-            <ReactCSSTransitionGroup
+            {/* <ReactCSSTransitionGroup
                 transitionAppear = {true}
                 transitionAppearTimeout = {600}
                 transitionEnterTimeout={600}
@@ -17,7 +18,13 @@ const PageWithContent: React.FC = ({children}) => {
                     {children}
                 </Menu>
                 
-            </ReactCSSTransitionGroup>
+            </ReactCSSTransitionGroup> */}
+            <AnimatePresence exitBeforeEnter>
+                <Menu>
+                    {children}
+                </Menu>
+
+            </AnimatePresence>
         </div>
     );
 };

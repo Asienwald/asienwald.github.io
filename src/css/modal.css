@@ -1,0 +1,36 @@
+.modal-container{
+    background: linear-gradient(90deg, #E7E7E7 50%, #F8F8F8 50%);
+    position: absolute;
+    width: 80vw;
+    min-height: 90vh;
+    z-index: 99;
+    top: 5vh;
+    left: 10vw;
+    border-radius: 50px;
+    padding: 5%;
+    box-shadow: 5px 10px 8px #888888;
+}
+.modal-container .row{
+    min-height: 70vh;
+}
+
+.left-view img{
+    width: auto;
+    height: 40vh;
+    border: 2px solid #D3D3D3;
+}
+
+.right-view{
+    margin-left: 5vw;
+}
+
+.modal-cross{
+    position: absolute;
+    right: 2vw;
+    top: 2vh;
+    cursor: pointer;
+}
+.modal-cross svg{
+    height: 3vw;
+    width: 3vw;
+}
