@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import {HashRouter as Router, Switch, Route, Link, Redirect, useLocation} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, Link, Redirect, useLocation} from 'react-router-dom';
 import './App.css';
 
 // pages
@@ -16,6 +16,9 @@ import Player from './components/common/player'
 import { useDispatch } from 'react-redux';
 import { AllActions } from './actions';
 import AchievementsModal from './components/pages/achievements/achievementsmodal';
+import ProjectsModal from './components/pages/projects/projectsModal';
+import ProjectsPage from './components/pages/projects';
+import { AnimateSharedLayout } from 'framer-motion';
 
 
 const LocationManager: React.FC = () => {
@@ -30,24 +33,45 @@ const LocationManager: React.FC = () => {
 
   useEffect(() => {
     console.log(location.pathname)
-    switch(location.pathname){
-      case "/":
-        console.log("its root!")
-        changeMovingEnv(true, true, false);
-        dispatch(AllActions.EnvActions.setBackWorld(false));
-        break;
-      case "/worldmap":
-        console.log("it's worldmap!");
-        changeMovingEnv(false, false, true);
-        dispatch(AllActions.EnvActions.setBackWorld(false));
-        break;
-      case "/aboutme": case "/education": case "/experience": case "/achievements":
-        changeMovingEnv(true, false, false);
-        dispatch(AllActions.EnvActions.setBackWorld(true));
-        break;
-      default:
-        changeMovingEnv(false, true, true);
-        dispatch(AllActions.EnvActions.setBackWorld(false));
+    const path: string = location.pathname;
+    // switch(_path){
+    //   case "/":
+    //     console.log("its root!")
+    //     changeMovingEnv(true, true, false);
+    //     dispatch(AllActions.EnvActions.setBackWorld(false));
+    //     break;
+    //   case "/worldmap":
+    //     console.log("it's worldmap!");
+    //     changeMovingEnv(false, false, true);
+    //     dispatch(AllActions.EnvActions.setBackWorld(false));
+    //     break;
+    //   case "/aboutme": case "/education": case "/experience": case "/achievements": case "/projects":
+    //   case _path.match(/\/projects(\/.*)*/):
+    //     changeMovingEnv(true, false, false);
+    //     dispatch(AllActions.EnvActions.setBackWorld(true));
+    //     break;
+    //   default:
+    //     changeMovingEnv(false, true, true);
+    //     dispatch(AllActions.EnvActions.setBackWorld(false));
+    // }
+    if(path == "/"){
+      changeMovingEnv(true, true, false);
+      dispatch(AllActions.EnvActions.setBackWorld(false));
+    }else if(path == "/worldmap"){
+      changeMovingEnv(false, false, true);
+      dispatch(AllActions.EnvActions.setBackWorld(false));
+    }else if([
+      '/aboutme',
+      '/education',
+      '/experience',
+      '/achievements',
+      '/projects'
+    ].includes(path) || path.match(/\/(projects|achievements)(\/.*)*/)){
+      changeMovingEnv(true, false, false);
+      dispatch(AllActions.EnvActions.setBackWorld(true));
+    }else{
+      changeMovingEnv(false, true, true);
+      dispatch(AllActions.EnvActions.setBackWorld(false));
     }
   }, [location])
 
@@ -61,53 +85,63 @@ const LocationManager: React.FC = () => {
 function App() {
   return (
     <div className="App">
+      <AnimateSharedLayout type="crossfade">
+        <Router basename={process.env.PUBLIC_URL}>
+          <LocationManager/>
+          <Switch>
+              <Route
+                exact = {true}
+                path = "/"
+                component = {HomePage}
+              />
+              <Route
+                exact
+                path = "/worldmap"
+                component = {WorldMapPage}
+              />
+              <Route
+                exact
+                path = "/aboutme"
+                component = {AboutMePage}
+              />
+              <Route
+                exact
+                path = "/education"
+                component = {EducationPage}
+              />
+              <Route
+                exact
+                path = "/experience"
+                component = {ExperiencePage}
+              />
+              <Route
+                exact
+                path = {["/achievements/:route", "/achievements"]}
+                component = {AchievemmentsPage}
+              />
 
-      <Router basename={process.env.PUBLIC_URL}>
-        <LocationManager/>
-        <Switch>
-            <Route
-              exact = {true}
-              path = "/"
-              component = {HomePage}
-            />
-            <Route
-              exact
-              path = "/worldmap"
-              component = {WorldMapPage}
-            />
-            <Route
-              exact
-              path = "/aboutme"
-              component = {AboutMePage}
-            />
-            <Route
-              exact
-              path = "/education"
-              component = {EducationPage}
-            />
-            <Route
-              exact
-              path = "/experience"
-              component = {ExperiencePage}
-            />
-            <Route
-              exact
-              path = "/achievements"
-              component = {AchievemmentsPage}
-            />
-            <Route
-              component = {NotFound}
-            />       
-        </Switch>
+              <Route
+                exact
+                path = {["/projects/:route", "/projects"]}
+                component={ProjectsPage}
+              />
 
-        <Player/>
+              <Route
+                component = {NotFound}
+              />       
+          </Switch>
 
-        <Environment/>
+          <Player/>
 
-        {/* for modals */}
-        <AchievementsModal/>
+          <Environment/>
 
-      </Router>
+          {/* for modals */}
+          {/* <AchievementsModal/>
+          <ProjectsModal/> */}
+
+        </Router>
+      </AnimateSharedLayout>
+      
 
     </div>
   );

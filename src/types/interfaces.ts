@@ -1,4 +1,4 @@
-import { CHANGE_ENV, CHANGE_MOVING, SET_ACHIEVEMENT_MODAL, SET_BACKWORLD, SET_PLAYER_CENTER, SET_PLAYER_INVERT } from "../actions/actiontypes";
+import { CHANGE_ENV, CHANGE_MOVING, SET_ACHIEVEMENT_MODAL, SET_BACKWORLD, SET_PLAYER_CENTER, SET_PLAYER_INVERT, SET_PROJECT_MODAL } from "../actions/actiontypes";
 
 export interface IParallax{
     image: string,
@@ -27,20 +27,22 @@ export interface IPosition{
     descriptionList: string[]
 }
 
-export interface ICarouselSection{
-    title: string,
-    carouselItems: IAchievement[]
-}
-
-// export interface IAchievement{
-//     imageUrl: string,
-//     awardTitle: string,
-//     awardOrg: string,
-//     descripList: string[]
+// export interface ICarouselSection{
+//     title: string,
+//     carouselItems: IAchievement[]
 // }
 
+// export interface IProjectCarousel{
+//     title: string
+// }
+
+export interface ICarousel{
+    title: string,
+    route: string
+}
+
 export interface IAchievement{
-    isVisible?: boolean
+    achievementRoute: string,
     imageUrl: string,
     issueDate: string,
     title: string,
@@ -48,14 +50,36 @@ export interface IAchievement{
     descripList: string[]
 }
 
+export interface IProject{
+    projectRoute: string,
+    imageUrlList: string[],
+    projectTitle: string,
+    projectPeriod: string,
+    tags: string[],
+    builtWith: string[],
+    projectLink: string,
+    descripList: string[]
+}
 
+
+// app and reducer states
 export interface AppState{
     env: IEnvState,
-    modal: IModalState
+    modal: IModalState,
+    data: IDataState
+}
+
+export interface IDataState{
+    projects: IProject[],
+    achievements: {
+        awards: IAchievement[],
+        certs: IAchievement[]
+    }
 }
 
 export interface IModalState{
-    achievementModal: IAchievement
+    achievementModal: IAchievement,
+    projectModal: IProject
 }
 
 export interface IEnvState{
@@ -95,9 +119,14 @@ export interface ISetPlayerInvert{
 export type TEnvActionTypes = IChangeMovingAction | IChangeEnvAction | ISetPlayerCenter | ISetBackWorld | ISetPlayerInvert;
 
 // modal actions
-export interface ISetAchievementModal{
-    type: typeof SET_ACHIEVEMENT_MODAL,
-    payload: IAchievement
-}
+// export interface ISetAchievementModal{
+//     type: typeof SET_ACHIEVEMENT_MODAL,
+//     payload: IAchievement
+// }
 
-export type TModalActionTypes = ISetAchievementModal;
+// export interface ISetProjectModal{
+//     type: typeof SET_PROJECT_MODAL,
+//     payload: IProject
+// }
+
+// export type TModalActionTypes = ISetAchievementModal | ISetProjectModal;

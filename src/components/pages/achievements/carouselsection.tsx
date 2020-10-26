@@ -1,21 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import '../../../css/misc.css'
-import '../../../css/achievements.css'
-import {Stack, Frame, Page, motion} from 'framer'
-import {  ICarouselSection, IAchievement } from '../../../types/interfaces';
-import { useDispatch } from 'react-redux';
+import '../../../css/carousel.css'
+import {Stack, Frame, Page} from 'framer'
+import {motion} from 'framer-motion'
+import {  ICarousel, IAchievement, AppState } from '../../../types/interfaces';
+import { useDispatch, useSelector } from 'react-redux';
 import {AllActions} from '../../../actions';
+import {Link} from 'react-router-dom'
 
 
-const CarouselSection: React.FC<ICarouselSection> = ({
+const CarouselSection: React.FC<ICarousel> = ({
     title,
-    carouselItems
+    route
 }) => {
     const [currentPage, setCurrentPage] = useState<number>(0);
     const [cardPerPage, setCardPerPage] = useState<number>(3);
     const [pagesNum, setPagesNum] = useState<number>(0);
 
     const dispatch = useDispatch();
+
+    // let carouselItems: IAchievement[] = [];
+    const carouselItems: IAchievement[] = useSelector((state: AppState) => {
+        if(title.includes("awards")) return state.data.achievements.awards;
+        else return state.data.achievements.certs;
+    })
 
 
     const indicatorSize = 10
@@ -137,9 +145,9 @@ const CarouselSection: React.FC<ICarouselSection> = ({
                 }}
                 // width="56vw"
                 // height="40vh"
+                center={false}
                 className=" page-container "
                 padding={0}
-                alignment="start"
             >
 
                 {
@@ -149,32 +157,40 @@ const CarouselSection: React.FC<ICarouselSection> = ({
                         // console.log([...Array(pagesNum)])
                         // console.log(index)
                         // console.log(`startIndex ${startIndex}`)
-                        return <div  className="row p-0 m-0 ">
+                        return <div  className="row p-0 m-0 h-100 w-100">
                             {
-                                _carouselItems.map((item: IAchievement, index) => {
-                                    return <div className="col-12 col-md-6 col-lg-4 card-col">
-                                                <div className="card text-center px-3 pt-2"
-                                                    onClick={() => {
-                                                        console.log(item);
-                                                        dispatch(AllActions.ModalActions.setAchievementModalVisible({
-                                                            isVisible: true,
-                                                            ...item
-                                                        }));
-                                                    }}
-                                                >
-                                                    <div className="card-img">
-                                                        <img
-                                                            src={item.imageUrl}
-                                                        />
-                                                    </div>
-                        
-                                                    <div className="mt-2">
-                                                        <p className="size-30 color-red">{item.title}</p>
-                                                        <p className="size-20 color-grey">{item.issuedBy}</p>
-                                                    </div>
-                                                </div>
+                                _carouselItems.map((item: IAchievement) => {
+                                    return( route != item.achievementRoute && <div className="col-12 col-md-6 col-lg-4 card-col">
+                                                <Link to={`/achievements/${item.achievementRoute}`}>
+                                                    <motion.div className="card text-center px-3 pt-2"
+                                                        // onClick={() => {
+                                                        //     console.log(item);
+                                                        //     dispatch(AllActions.ModalActions.setAchievementModalVisible({
+                                                        //         isVisible: true,
+                                                        //         ...item
+                                                        //     }));
+                                                        // }}
+                                                        layoutId={`achievement-container-${item.achievementRoute}`}
+                                                        style={{cursor: 'pointer'}}
+                                                        key={item.achievementRoute}
+                                                    >
+                                                        <motion.div className="card-img"
+                                                            layoutId={`achievement-image-${item.achievementRoute}`}
+                                                        >
+                                                            <img
+                                                                src={item.imageUrl}
+                                                            />
+                                                        </motion.div>
+                            
+                                                        <div className="mt-2">
+                                                            <p className="size-30 color-red">{item.achievementRoute}</p>
+                                                            <p className="size-20 color-grey">{item.issuedBy}</p>
+                                                        </div>
+                                                    </motion.div>
+                                                </Link>
                                             </div>
-                                })
+                                   
+                                )})
                             }
                         </div>
                     })

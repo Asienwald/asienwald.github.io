@@ -7,3 +7,7 @@ export const SET_PLAYER_INVERT = "SET_PLAYER_INVERT";
 
 // modal action types
 export const SET_ACHIEVEMENT_MODAL = "SET_ACHIEVEMENT_MODAL";
+export const SET_PROJECT_MODAL = "SET_PLAYER_MODAL";
+
+// data types
+// for now no option to change state of data

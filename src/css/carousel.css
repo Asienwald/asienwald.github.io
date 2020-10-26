@@ -1,8 +1,12 @@
 .carousel-section{
     min-height: 45vh;
 }
+.project-carousel{
+    min-height: 75vh;
+    min-width: 57vw;
+}
 
-.carousel-section hr{
+.carousel-section hr, .project-carousel hr{
     display: block;
     height: 1px;
     border: 0;
@@ -26,6 +30,10 @@
     width: 56vw !important;
     height: 40vh !important;
 }
+.project-carousel .page-container{
+    width: 56vw !important;
+    height: 65vh !important;
+}
 .page-container:first-child{
     transform: translateX(0) !important;
 }
@@ -43,6 +51,7 @@
     border: 5px solid #6C6C6C;
     vertical-align: middle;
 }
+
 .card-img img{
     width: 100%;
     height: auto;
@@ -52,6 +61,10 @@
     min-width: 5vw;
     min-height: 5vh;
     position: relative;
+}
+
+.project-carousel .card-col{
+    margin-top: 2vh;
 }
 
 
@@ -65,6 +78,15 @@
     .page-container{
         min-width: 78vw !important;
         min-height: 70vh !important;
+    }
+    .project-carousel{
+        min-height: 90vh;
+    }
+    .project-carousel .page-container{
+        min-height: 80vh !important;
+    }
+    .project-carousel .carousel-section{
+        min-height: 90vh;
     }
     .card-col{
         padding: 0;

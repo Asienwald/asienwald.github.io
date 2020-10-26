@@ -34,3 +34,38 @@
     height: 3vw;
     width: 3vw;
 }
+
+.link-icon{
+    background-image: url("/assets/link.png");
+    background-size: cover;
+    height: auto;
+    width: 1.2vw;
+}
+
+@media only screen and (max-width: 900px){
+    .modal-container{
+        width: 90vw;
+        left: 5vw;
+        border-radius: 10px;
+        background: linear-gradient(180deg, #E7E7E7 50%, #F8F8F8 50%);
+        margin-bottom: 5vh;
+    }
+    .modal-cross{
+        right: 4vw;
+        top: 4vh;
+    }
+    .modal-cross svg{
+        height: 8vw;
+        width: 8vw;
+    }
+    .left-view{
+        margin-top: 10vh;
+    }
+    .left-view img{
+        max-width: 80vw;
+        height: auto;
+    }
+    .right-view{
+        margin-top: 10vh;
+    }
+}

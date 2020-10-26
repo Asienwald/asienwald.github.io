@@ -4,7 +4,15 @@ import PageWithContent from '../pagewithcontent';
 import AchievementsModal from './achievementsmodal';
 import CarouselSection from './carouselsection'
 
-const AchievementsPage = () => {
+interface match{
+    match:any
+}
+
+const AchievementsPage: React.FC<match> = ({
+    match
+}) => {
+    const {route} = match.params;
+
     return (
         <div>
             <PageWithContent>
@@ -13,41 +21,18 @@ const AchievementsPage = () => {
                 />
                 <CarouselSection
                     title="awards"
-                    carouselItems={[
-                        {
-                            imageUrl: "/assets/photos/aisp svrp 2019 silver 001.jpg",
-                            title: "AiSP SVRP 2019 Silver 1",
-                            issuedBy: "Association of Information Security Professionals",
-                            descripList: ["NULL for now"],
-                            issueDate: "OCT 2019"
-                        },
-                        {
-                            imageUrl: "/assets/photos/cmls cert.png",
-                            title: "AiSP SVRP 2019 Silver 2",
-                            issuedBy: "Association of Information Security Professionals 2",
-                            descripList: ["NULL for now bru", "hey heyyyy"],
-                            issueDate: "OCT 2019"
-                        }
-                    ]}
+                    route={route}
                 />
 
                 <CarouselSection
                     title="certs"
-                    carouselItems={[
-                        {
-                            imageUrl: "/assets/photos/aisp svrp 2019 silver 001.jpg",
-                            title: "AiSP SVRP 2019 Silver 1",
-                            issuedBy: "Association of Information Security Professionals",
-                            descripList: ["NULL for now"],
-                            issueDate: "OCT 2019"
-                        }
-                    ]}
+                    route={route}
                 />
 
-                {/* <AchievementsModal>
 
-                </AchievementsModal> */}
             </PageWithContent>
+
+            <AchievementsModal route={route} key={`achievements-modal-${route}`}/>
         </div>
     );
 };

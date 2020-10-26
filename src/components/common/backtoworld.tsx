@@ -23,13 +23,13 @@ function BackToWorld() {
     }, [location])
 
     return (
-        <motion.div className="back-world"
+        <div className="back-world"
             // whileHover={{
             //     scale: 1.1
             // }}
-            whileTap = {{
-                scale: 0.8
-            }}
+            // whileTap = {{
+            //     scale: 0.8
+            // }}
         >
             <div
                 onClick={() => {backToWorld()}}
@@ -38,7 +38,7 @@ function BackToWorld() {
                 <div className="back-world-icon"></div>
                 <p className="size-30 my-auto text-left ml-3">back to world map</p>
             </div>
-        </motion.div>
+        </div>
     );
 }
 
