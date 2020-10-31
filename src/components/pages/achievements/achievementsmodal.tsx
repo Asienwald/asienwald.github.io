@@ -62,19 +62,6 @@ const AchievementsModal: React.FC<IAchievementsModal> = ({route}) => {
                                 </div>
                                 <div className="col-12 col-lg-6 text-left">
                                     <motion.div className="right-view khyay"
-                                        // initial={{
-                                        //     opacity: 0,
-                                        //     transform: "translateX(-100px)"
-                                        // }}
-                                        // animate={{
-                                        //     opacity: 1,
-                                        //     transform: "translateX(0px)"
-                                        // }}
-                                        // exit={{
-                                        //     opacity: 0,
-                                        //     transform: "translateX(-100px)"
-                                        // }}
-                                        // transition={{duration: .4, ease:"easeOut"}}
                                     >
                                         <p className="color-grey size-20">{issueDate}</p>
                                         <p className="size-40">{achievementRoute}</p>

@@ -37,6 +37,29 @@
 .page-container:first-child{
     transform: translateX(0) !important;
 }
+.my-modal .page-container{
+    margin-top: 3vh;
+    height: 20vh !important;
+    width: 90% !important;
+    position: static;
+}
+.my-modal .card-col{
+
+}
+.my-modal .card-col img{
+    width: 100%;
+    height: auto;
+}
+.projects-modal .carousel-controls{
+    position: static;
+    /* bottom: -7vh;
+    left: 0; */
+    margin-top: 2vh;
+}
+.projects-modal .carousel-controls img{
+    filter: invert(31%) sepia(0%) saturate(1499%) hue-rotate(157deg) brightness(102%) contrast(88%);
+    border: none;
+}
 
 .card{
     overflow: hidden;
@@ -79,6 +102,10 @@
         min-width: 78vw !important;
         min-height: 70vh !important;
     }
+    .my-modal .page-container{
+        min-height: 20vh !important;
+    }
+    
     .project-carousel{
         min-height: 90vh;
     }
@@ -103,4 +130,23 @@
     .indicator-wrapper{
         min-width: 20vw;
     }
+
+    .my-modal .page-container{
+        margin: 5vh auto;
+        margin-bottom: 0;
+    }
+    .my-modal .carousel-controls{
+        position: static;
+    }
+
+    /* .my-modal .page-container{
+        margin-top: 5vh;
+        margin-left: 2vw;
+    }
+    .my-modal .left-view{
+        min-height: 116vh !important;
+    } */
+    /* .carousel-fill{
+        height: 20vh;
+    } */
 }

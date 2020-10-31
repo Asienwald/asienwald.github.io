@@ -17,7 +17,7 @@ function Panel() {
                     <div className="h-100 w-100 d-flex flex-column justify-content-end text-white p-0">
                         <h1 className="size-60 color-red">:(</h1>
                         <h1 className="size-60 color-red">Not found!</h1>
-                        <p className="size-40 mb-3 mt-4">The page you are looking for is either in progress or don't exist!</p>
+                        <p className="size-40 mb-3 mt-4">The page you are looking for is either in progress or doesn't exist!</p>
 
                         <button 
                             className="start-btn size-40 mb-2 mt-3"
