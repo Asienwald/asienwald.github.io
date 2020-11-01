@@ -160,16 +160,9 @@ const CarouselSection: React.FC<ICarousel> = ({
                         return <div  className="row p-0 m-0 h-100 w-100">
                             {
                                 _carouselItems.map((item: IAchievement) => {
-                                    return( route != item.achievementRoute && <div className="col-12 col-md-6 col-lg-4 card-col">
+                                    return(route != item.achievementRoute && <div className="col-12 col-md-6 col-lg-4 card-col">
                                                 <Link to={`/achievements/${item.achievementRoute}`}>
                                                     <motion.div className="card text-center px-3 pt-2"
-                                                        // onClick={() => {
-                                                        //     console.log(item);
-                                                        //     dispatch(AllActions.ModalActions.setAchievementModalVisible({
-                                                        //         isVisible: true,
-                                                        //         ...item
-                                                        //     }));
-                                                        // }}
                                                         layoutId={`achievement-container-${item.achievementRoute}`}
                                                         style={{cursor: 'pointer'}}
                                                         key={item.achievementRoute}
@@ -196,129 +189,8 @@ const CarouselSection: React.FC<ICarousel> = ({
                     })
                      
                 }
-                {/* <div className="row red p-0 m-0">
-                    <div className="col-12 col-md-6 col-lg-4 red">
-                        <div className="card text-center">
-                            <div className="card-img mt-2 mx-3">
-                                <img
-                                    src="/assets/photos/aisp svrp 2019 silver 001.jpg"
-                                />
-                            </div>
 
-                            <div className="mt-2">
-                                <p className="size-30 color-red">AiSP SVRP 2019 Silver</p>
-                                <p className="size-20 color-grey">AiSP/CSA</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-12 col-md-6 col-lg-4 red">
-                        <div className="card text-center">
-                            <div className="card-img mt-2 mx-3">
-                                <img
-                                    src="/assets/photos/aisp svrp 2019 silver 001.jpg"
-                                />
-                            </div>
-
-                            <div className="mt-2">
-                                <p className="size-30 color-red">AiSP SVRP 2019 Silver</p>
-                                <p className="size-20 color-grey">AiSP/CSA</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-12 col-md-6 col-lg-4 red">
-                        <div className="card text-center">
-                            <div className="card-img mt-2 mx-3">
-                                <img
-                                    src="/assets/photos/aisp svrp 2019 silver 001.jpg"
-                                />
-                            </div>
-
-                            <div className="mt-2">
-                                <p className="size-30 color-red">AiSP SVRP 2019 Silver</p>
-                                <p className="size-20 color-grey">AiSP/CSA</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="row red p-0 m-0">
-                    <div className="col-12 col-md-6 col-lg-4 red">
-                        <div className="card text-center">
-                            <div className="card-img mt-2 mx-3">
-                                <img
-                                    src="/assets/photos/aisp svrp 2019 silver 001.jpg"
-                                />
-                            </div>
-
-                            <div className="mt-2">
-                                <p className="size-30 color-red">AiSP SVRP 2019 Silver</p>
-                                <p className="size-20 color-grey">AiSP/CSA</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-12 col-md-6 col-lg-4 red">
-                        <div className="card text-center">
-                            <div className="card-img mt-2 mx-3">
-                                <img
-                                    src="/assets/photos/aisp svrp 2019 silver 001.jpg"
-                                />
-                            </div>
-
-                            <div className="mt-2">
-                                <p className="size-30 color-red">AiSP SVRP 2019 Silver</p>
-                                <p className="size-20 color-grey">AiSP/CSA</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-12 col-md-6 col-lg-4 red">
-                        <div className="card text-center">
-                            <div className="card-img mt-2 mx-3">
-                                <img
-                                    src="/assets/photos/aisp svrp 2019 silver 001.jpg"
-                                />
-                            </div>
-
-                            <div className="mt-2">
-                                <p className="size-30 color-red">AiSP SVRP 2019 Silver</p>
-                                <p className="size-20 color-grey">AiSP/CSA</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
             </Page>
-            
-            {/* <div className="row">
-                {[...Array(pagesNum)].map(index => {
-                    return (
-                        <Frame
-                            // Visual & layout
-                            size={indicatorSize}
-                            radius={30}
-                            backgroundColor="#fff"
-                            // top="calc(50% + 100px)"
-                            style={{
-                                cursor: "pointer",
-                                left: `calc(50% + ${index - 1} * ${indicatorSize +
-                                indicatorPadding}px)`
-                            }}
-                            x={-indicatorWidthTotal / 2}
-                            // Animation
-                            opacity={indicatorAlpha}
-                            animate={{
-                                opacity: currentPage === index - 1 ? 1 : indicatorAlpha
-                            }}
-                            // Required by React
-                            key={index}
-                            onClick={() => setCurrentPage(index - 1)}
-                        />
-                    );
-                })}
-            </div> */}
             
         </div>
     );

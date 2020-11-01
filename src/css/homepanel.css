@@ -1,28 +1,39 @@
-@keyframes top-to-down{
-    0%{
-        margin-top: -60vh;
-    }
-    80%{
-        margin-top: -20vh;
-    }
-    90%{
-        margin-top: -24vh;
-    }
-    100%{
-        margin-top: -20vh;
-    }
-}
 
 .home-panel{
-    background-image: url("/assets/menu_panel.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     height: 90vh;
     margin-top: -20vh;
+    padding: 0;
+}
 
-    padding: 6vh 6vw;
-    animation: top-to-down 0.8s ease-out forwards;
+.menu-board-wrapper{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: absolute;
+    bottom: 0;
+    min-height: 50vh;
+    padding: 0;
+}
+.board-menu{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+.menu-text{
+    z-index: 3;
+    width: 100%;
+    margin-bottom: 10vh;
+}
+.menu-text .size-60{
+    margin-bottom: 5vh !important;
+}
+.menu-chains{
+    flex: 1;
+    background-image: url("/assets/menu_2.png");;
+    background-repeat: repeat-y;
+    background-size: contain;
+    width: 100%;
 }
 
 .not-found-panel{
@@ -33,71 +44,26 @@
 .start-btn{
     color: white;
     background-color: #007C75;
-    /* animation: fade-in 2s ease-in forwards; */
-    /* animation-delay: 1.2s; */
-    /* opacity: 0%; */
+    display: inline-block;
+    width: 100%;
 }
 
 @media only screen and (max-width: 500px){
-    @keyframes top-to-down{
-        0%{
-            margin-top: -60vh;
-        }
-        80%{
-            margin-top: -20vh;
-        }
-        90%{
-            margin-top: -24vh;
-        }
-        100%{
-            margin-top: -20vh;
-        }
-    }
-    .home-panel{
-        background-image: url("/assets/menu_panel_tablet.png");
-        margin-top: -15vh;
-        padding: 8vh 18vw;
+
+    .menu-text{
+        margin-bottom: 5vh;
     }
 }
-@media only screen and (min-width: 501px) and (max-width: 900px){
-    @keyframes top-to-down{
-        0%{
-            margin-top: -60vh;
-        }
-        80%{
-            margin-top: -15vh;
-        }
-        90%{
-            margin-top: -20vh;
-        }
-        100%{
-            margin-top: -15vh;
-        }
-    }
-    .home-panel{
-        padding: 12vh 10vw;
-        margin-top: -15vh;
-    }
-}
-@media only screen and (min-width: 1600px) and (max-width: 2100px){
-    .home-panel{
-        padding: 8vh 6vw;
-    }
-}
-@media only screen and (min-width: 2100px) and (max-width:3100px){
-    .home-panel{
-        padding: 10vh 6vw;
-    }
-}
-@media only screen and (min-width: 3100px){
-    .home-panel{
-        padding: 8vh 6vw;
+
+@media only screen and (min-width: 2100px){
+    .menu-text{
+        padding: 0 3vw;
     }
     .home-panel .size-30{
         margin-bottom: 3vh !important;
-        margin-top: 5vh !important;
+        margin-top: 3vh !important;
     }
     .home-panel .size-40{
-        margin-top: 3vh !important;
+        margin-top: 2vh !important;
     }
 }

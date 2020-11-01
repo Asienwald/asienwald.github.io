@@ -1,5 +1,6 @@
 import { CHANGE_ENV, CHANGE_MOVING, SET_ACHIEVEMENT_MODAL, SET_BACKWORLD, SET_PLAYER_CENTER, SET_PLAYER_INVERT, SET_PROJECT_MODAL } from "../actions/actiontypes";
 
+
 export interface IParallax{
     image: string,
     index: number
@@ -27,14 +28,6 @@ export interface IPosition{
     descriptionList: string[]
 }
 
-// export interface ICarouselSection{
-//     title: string,
-//     carouselItems: IAchievement[]
-// }
-
-// export interface IProjectCarousel{
-//     title: string
-// }
 
 export interface ICarousel{
     title: string,
@@ -117,16 +110,3 @@ export interface ISetPlayerInvert{
 }
 
 export type TEnvActionTypes = IChangeMovingAction | IChangeEnvAction | ISetPlayerCenter | ISetBackWorld | ISetPlayerInvert;
-
-// modal actions
-// export interface ISetAchievementModal{
-//     type: typeof SET_ACHIEVEMENT_MODAL,
-//     payload: IAchievement
-// }
-
-// export interface ISetProjectModal{
-//     type: typeof SET_PROJECT_MODAL,
-//     payload: IProject
-// }
-
-// export type TModalActionTypes = ISetAchievementModal | ISetProjectModal;
