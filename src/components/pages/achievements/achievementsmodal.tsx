@@ -17,7 +17,7 @@ const AchievementsModal: React.FC<IAchievementsModal> = ({route}) => {
     // const dispatch = useDispatch();
     const history = useHistory();
 
-    const {achievementRoute, imageUrl, issueDate, title, issuedBy, descripList} = useSelector((state: AppState): IAchievement => {
+    const {achievementRoute, issueDate, title, issuedBy, descripList} = useSelector((state: AppState): IAchievement => {
         return getAchievement(state.data, route);
     })
 
@@ -40,23 +40,10 @@ const AchievementsModal: React.FC<IAchievementsModal> = ({route}) => {
                             <div className="row">
                                 <div className="col-12 col-lg-6">
                                     <motion.div className="left-view"
-                                        // initial={{
-                                        //     opacity: 0,
-                                        //     transform: "translateX(100px)"
-                                        // }}
-                                        // animate={{
-                                        //     opacity: 1,
-                                        //     transform: "translateX(0px)"
-                                        // }}
-                                        // exit={{
-                                        //     opacity: 0,
-                                        //     transform: "translateX(100px)"
-                                        // }}
-                                        // transition={{duration: .4, ease:"easeOut"}}
                                         layoutId={`achievement-image-${route}`}
                                     >
                                         <img
-                                            src={imageUrl}
+                                            src={`/assets/achievements/${achievementRoute}.jpg`}  
                                         />
                                     </motion.div>
                                 </div>
@@ -88,10 +75,6 @@ const AchievementsModal: React.FC<IAchievementsModal> = ({route}) => {
                                 whileTap={{
                                     scale: 0.8
                                 }}
-                                // onClick={() => {
-                                //     // setIsVisble(false);
-                                //     dispatch(AllActions.ModalActions.setAchievementModalNotVisible());
-                                // }}
                             >
                                 <Link to="/achievements">
                                     <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="240px" height="240px"><path d="M25.707,6.293c-0.195-0.195-1.805-1.805-2-2c-0.391-0.391-1.024-0.391-1.414,0c-0.195,0.195-17.805,17.805-18,18c-0.391,0.391-0.391,1.024,0,1.414c0.279,0.279,1.721,1.721,2,2c0.391,0.391,1.024,0.391,1.414,0c0.195-0.195,17.805-17.805,18-18C26.098,7.317,26.098,6.683,25.707,6.293z"/><path d="M23.707,25.707c0.195-0.195,1.805-1.805,2-2c0.391-0.391,0.391-1.024,0-1.414c-0.195-0.195-17.805-17.805-18-18c-0.391-0.391-1.024-0.391-1.414,0c-0.279,0.279-1.721,1.721-2,2c-0.391,0.391-0.391,1.024,0,1.414c0.195,0.195,17.805,17.805,18,18C22.683,26.098,23.317,26.098,23.707,25.707z"/></svg>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ISchool } from '../../../types/interfaces';
+import { ISchool, ISubSection } from '../../../types/interfaces';
 import SubSection from './subsection';
 
 
@@ -58,7 +58,18 @@ const School: React.FC<ISchool> = ({
                         </div>
                         
                         <div>
-                            {academicComponent}
+                            {(academicComponent.gpa != "")? <p>cumulative gpa: {academicComponent.gpa}</p>: null}
+                            {
+                                academicComponent.sectionList.map((sect: ISubSection) => {
+                                    return (
+                                        <SubSection
+                                            sectionTitle = {sect.sectionTitle}
+                                            bulletPoints = {sect.bulletPoints}
+                                        />
+                                    )
+                                })
+                            }
+
                         </div>
                     </div>
                 </div>

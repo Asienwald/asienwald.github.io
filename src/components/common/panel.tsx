@@ -1,10 +1,8 @@
-import React, { Component, DOMElement, useEffect, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import React, {  useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../../css/homepanel.css';
 import '../../css/misc.css';
-import {motion, useAnimation} from 'framer-motion';
-import { NONAME } from 'dns';
-import { type } from 'os';
+import {motion} from 'framer-motion';
 
 interface IPanel{
     title: string,
@@ -20,24 +18,6 @@ const Panel: React.FC<IPanel> = ({
 
     const [menuBoard, setMenuBoard] = useState<string>("/assets/menu_1.png");
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    // const [buttonClick, setButtonClick] = useState(false);
-    // const history = useHistory();
-
-    // const buttonMotion = useAnimation();
-    
-    // buttonMotion.start){
-    //     click: {
-    //         border: "4px solid #FF852D",
-    //         transition: {
-    //             duration: .4,
-    //             loop: 1,
-    //             ease: "anticipate"
-    //         }
-    //     },
-    //     normal: {
-    //         border: "none"
-    //     }
-    // }
 
     const fadeIn = {
         hidden: {
@@ -91,35 +71,12 @@ const Panel: React.FC<IPanel> = ({
                             <div className="menu-text w-100 ">
                                 <div className="mx-5">
                                     {(window.location.pathname=="/")?<h1 className="size-60">{title}</h1>:<h1 className="size-60 color-red">{title}</h1>}
-                                    {/* <h1 className="size-60">{title}</h1> */}
-                                    {/* <p className="size-40 mb-3 mt-4">{descrip}</p> */}
                                     {descrip}
                                     <p className="mt-3 size-30 color-orange">{remark}</p>
                                     
                                     <motion.div
                                         className="p-0 m-0 mb-3 mt-2"
-                                        // onTap={{
-                                        //     border: "2px solid #FF852D"
-                                        // }}
-                                        // transition={{
-                                        //     duration: 1,
-                                        //     loop: 2
-                                        // }}
-                                        // variants={buttonMotion}
-                                        // animate={buttonMotion}
-                                        // animate={buttonClick?"click":"normal"}
                                         onClick={() => {
-                                            // buttonMotion.start({
-                                            //     border: ["0px solid #FF852D", "4px solid #FF852D"],
-                                            //     transition: {
-                                            //         duration: .2,
-                                            //         repeat: 1,
-                                            //         // ease: [0, 0, 100, 100],
-                                            //         times: [0, 1],
-                                            //         repeatDelay: .4
-                                            //     }
-                                            // })
-                                            // history.push("/worldmap");
                                         }}
                                         variants={fadeIn}
                                         initial="hidden"
@@ -130,10 +87,6 @@ const Panel: React.FC<IPanel> = ({
                                             ease: "easeOut"  
                                         }}
                                         
-                                        onAnimationComplete={() => {
-                                            // console.log("end!")
-                                            // history.push("/worldmap");
-                                        }}
                                     >
                                         <Link
                                             className="start-btn size-40"

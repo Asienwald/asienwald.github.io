@@ -171,7 +171,7 @@ const CarouselSection: React.FC<ICarousel> = ({
                                                             layoutId={`achievement-image-${item.achievementRoute}`}
                                                         >
                                                             <img
-                                                                src={item.imageUrl}
+                                                                src={`/assets/achievements/${item.achievementRoute}.jpg`} 
                                                             />
                                                         </motion.div>
                             

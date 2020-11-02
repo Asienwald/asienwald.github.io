@@ -26,7 +26,6 @@ export function getAchievement(state: IDataState, achievementRoute: string): IAc
     let found = false;
     let achievement: IAchievement = {
         achievementRoute: "",
-        imageUrl: "",
         issueDate: "",
         title: "",
         issuedBy: "",

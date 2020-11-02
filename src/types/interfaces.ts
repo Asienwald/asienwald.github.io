@@ -6,18 +6,47 @@ export interface IParallax{
     index: number
 }
 
+export interface IMisc{
+    title: string,
+    descrip: string,
+    remarks: string,
+    btnString: string
+}
+
+export interface IStats{
+    name: string,
+    age: number,
+    occupation: string,
+    status: string,
+    skills: string[],
+    toolsUsed: string[]
+}
+
+export interface IEducation{
+    schoolList: ISchool[]
+}
+
+interface IAcademic{
+    gpa: string,
+    sectionList: ISubSection[]
+}
+
 export interface ISchool{
     schoolName: string,
     studyPeriod: string,
     studyScope: string,
-    academicComponent: JSX.Element,
+    academicComponent: IAcademic,
     ccaList: string[],
     awardsList: string[]
 }
 
 export interface ISubSection{
     sectionTitle: string,
-    bulletPoints: string[]
+    bulletPoints: string[]  
+}
+
+export interface IExperience{
+    positionList: IPosition[]
 }
 
 export interface IPosition{
@@ -36,7 +65,6 @@ export interface ICarousel{
 
 export interface IAchievement{
     achievementRoute: string,
-    imageUrl: string,
     issueDate: string,
     title: string,
     issuedBy: string,
@@ -58,11 +86,13 @@ export interface IProject{
 // app and reducer states
 export interface AppState{
     env: IEnvState,
-    modal: IModalState,
-    data: IDataState
+    data: IDataState  
 }
 
 export interface IDataState{
+    stats: IStats,
+    education:IEducation,
+    experience: IExperience,
     projects: IProject[],
     achievements: {
         awards: IAchievement[],
@@ -70,10 +100,10 @@ export interface IDataState{
     }
 }
 
-export interface IModalState{
-    achievementModal: IAchievement,
-    projectModal: IProject
-}
+// export interface IModalState{
+//     achievementModal: IAchievement,
+//     projectModal: IProject
+// }
 
 export interface IEnvState{
     moving: boolean

@@ -55,7 +55,7 @@
     }
 }
 
-@media only screen and (min-width: 2100px){
+@media only screen and (min-width: 2000px){
     .menu-text{
         padding: 0 3vw;
     }
@@ -65,5 +65,6 @@
     }
     .home-panel .size-40{
         margin-top: 2vh !important;
+        /* margin-bottom: 5vh !important; */
     }
 }

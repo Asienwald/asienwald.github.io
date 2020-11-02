@@ -1,0 +1,234 @@
+stats:
+  name: "Kar Wei"
+  age: 18
+  occupation: "Student studying IT Security at Singapore Polytechnic"
+  status: "Trying to learn more about open source and how I can contribute"
+  skills:
+    - ReactJS w/ Typescript
+    - Redux
+    - Java
+    - Game Dev
+    - NodeJS/Express
+    - MySQL
+    - Python
+    - AWS Cloud
+    - Firebase
+    - Ethical Hacking
+  toolsUsed:
+    - Unity Game Engine
+    - VSCode
+    - Android Studio
+    - Figma
+    - VMWare Workstation
+education:
+  schoolList:
+    - schoolName: "Singapore Polytechnic"
+      studyPeriod: "2019-Current"
+      studyScope: "Diploma in Infocomm Security Management"
+      academicComponent:
+        gpa: 3.95
+        sectionList:
+          - sectionTitle: "Year 1"
+            bulletPoints: 
+              - "director's honour roll"
+              - 'fundamentals of programming (dist)'
+              - "mathematics (dist)"
+              - "fundamentals of computing (dist)"
+          - sectionTitle: "Year 2"
+            bulletPoints:
+              - "narrative thinking (dist)"
+              - "infocomm security (dist)"
+              - "linux administration and security (dist)"
+      ccaList:
+        - "school of computing ambassadors (head of r&d team)"
+        - "DISM gryphons (member)"
+        - "seed student interest group (member)"
+        - "symphonic band (member)"
+        - "japanese cultural club (member)"
+      awardsList:
+        - "dso diploma scholarship"
+        - "singapore poly outstanding talent programme (SPOT)"
+    - schoolName: "Chung Cheng High (Yishun)"
+      studyPeriod: "2015-2019"
+      studyScope: "Express Stream"
+      academicComponent:
+        gpa: ""
+        sectionList:
+          - sectionTitle: "GCE O Levels 2018"
+            bulletPoints:
+              - "raw l1r5 - 6"
+              - "top scorer (cchy) 2018"
+              - "8 distinctions"
+      ccaList:
+        - "symphonic band (basses section leader) - i play the euphonium!"
+      awardsList:
+        - "student of the year 2018"
+        - "EDUSAVE certificate of academic achievement 2015, 2016"
+        - "CDC-CCC education merit award 2016"
+        - "EDUSAVE scholarship 2017, 2018"
+        - "Singapore Youth Festival, Silver Award"
+experience:
+  positionList:
+    - role: "Director"
+      division: "Talent Development Department"
+      organisation: "Cyber Youth Singapore"
+      positionPeriod: "Sept 2020 to Present"
+      descriptionList:
+        - "as the director of the talent development department in CYS, i am responsible for ensuring that youths in the cyber youth collective have constant access to opportunities to excel and develop themselves in pursuit of a career in cyber."
+        - "i guide and lead my members in the collective development team and collaboration team in developing and maintaining the talent development matrix (nest), liasing with external organisations and organising cyber events"
+    - role: "Student Intern"
+      divisin: "Information Division"
+      organisation: "DSO National Laboratories"
+      positionPeriod: "Aug 2019 to Oct 2019"
+      descriptionList:
+        - "i served a 2 month internship period in dso national laboratories in my year 1 study in singapore polytechnic."
+        - "my project was on automated red teaming where an ai was built to think and act like a penetration tester. i was mainly tasked with developing the penetration tools used for the project."
+        - "with the aid of my supervisor and peers in dso, i learnt about working in an actual penetration testing environment and further broadened my experience in penetration testing techniques"
+achievements:
+  awards:
+    - achievementRoute: "dir-honour-roll-2020"
+      issueDate: "AY 2019/2020"
+      title: "Director's Honour Roll 2019/2020"
+      issuedBy: "Singapore Polytechnic"
+      descripList:
+        - "This award is awarded to the top 10% of students in the DISM AY 2019/2020 cohort."
+    - achievementRoute: "svrp-2019"
+      issueDate: "Oct 2019"
+      title: "AiSP SVRP 2019 Silver"
+      issuedBy: "Association of Information Security Professionals"
+      descripList:
+        - "This award signifies my completion of 2 out of 3 pillars in the SVRP Framework."
+        - "In total I had volunteered more than 30 hours in the Skills pillar and more than 60 hours in the Events pillar from Sept 2018 to Aug 2019."
+    - achievementRoute: "hackasia-2019"
+      issueDate: "Oct 2019"
+      title: "Hack.Asia 2019 Hackathon Challenge 1st Runner-Up"
+      issuedBy: "Daimler Mobility"
+      descripList:
+        - "I had the honour to team up with 3 of my seniors for this 24 hour hackathon, where we built a prototype and pitched to the attending participants and a panel of judges."
+        - "The challenge problem we picked was on gamifying the learning of Information Security through Augmented Reality (AR), where Daimler was looking to use it to engage and educate their employees in a professional workplace."
+        - "This hackathon had attracted 800 student applicants from 23 countries in 24 hours and we were fortunate to be awarded 1st Runner-Up for our challenge."
+        - "Following the event, we were approached by Jardines to present our idea at the 2019 Jardines Digital Conference in Hong Kong. However, due to ongoing riots in HK at that time, out team had to reject the offer."
+        - "So many great things happened during this event, but my most prominent memory of this would be travelling to the Mandarin Oriental Hotel from AWS' HQ to continue the event for the night where the organisers ordered more than 100 McDonald's burgers for the participants as supper :D"
+        - "Yea that and also sneaking out in the middle of the night through the event to have a sick night walk around Marina Bay Sands with my team. Fun times."
+    - achievementRoute: "dso-scholarship-2019"
+      issueDate: "2019"
+      title: "DSO Diploma Scholarship 2019"
+      issuedBy: "DSO National Laboratories"
+      descripList:
+        - "DSO National Laboratories (DSO) is Singapore’s largest defence research and development (R&D) organisation, with the critical mission to develop technological solutions to sharpen the cutting edge of Singapore's national security."
+        - "I had the honour of receiving this scholarship before my first year in DISM together with another year 2 senior taking the same course."
+    - achievementRoute: "cys-camp-hackathon-2019"
+      issueDate: "Dec 2019"
+      title: "CYS Camp Design Thinking Hackathon Champion 2019"
+      issuedBy: "Cyber Youth Singapore"
+      descripList:
+        - "I originally volunteered as a Group Leader in this event to meet new people. Who knew we would actually win the design thinking hackathon lmao."
+        - "Spanning a total of 4 days, 3 of them were spent attending talks, workshops, and brainstorming for ideas for the Design Hackathon. Each group had an assigned group leader (which was me) and my group had 8 other members, ranging from students studying in poly to secondary school."
+        - "Our group came up with Cygage, a centralised youth platform aiming to envelope all of CYS' vision and activities for youths of all ages to participate in and mingle. Our idea was well received during the pitch, and the winner was promptly announced the next day."
+        - "Following the announcement, we were met with a short video interview by CNA and had to present our idea to the crowd of participants and additional guests present on the day of the official launch of CYS."
+        - "Soon after the event, I was asked to join CYS and that's where my journey began in the then talent management team headed by Kenneth. Though Cygage did not eventually come into the fruition, I got the opportunity to work on a similar large scale project as the current Head of Talent Development Department in CYS. More coming soon :))"
+    - achievementRoute: "cys-camp-ctf-2019"
+      issueDate: "Dec 2019"
+      title: "CYS Camp 10h CTF 3rd Place"
+      issuedBy: "Cyber Youth Singapore"
+      descripList:
+        - "This 10 hour CTF occured on the last day of the 4 day CYS camp held in December 2019. All participants were required to form teams of 2-3 members to participate in the CTF."
+        - "I'm not gonna lie here, the main reason my team won even though we only had 2 members while the other winning teams had 3 was due to the presence of my amazingly talented senior, Bryon, who is now participating in WorldSkills 2020."
+        - "Back then the me had script kiddie level knowledge on reverse engineering and Bryon's knowledge of RE greatly put our team at an advantage as the hardest challenges were all RE challenges."
+        - "Even so, I managed to walk home with 200SGD and a great learning experience I'll never forget. Nice."
+    - achievementRoute: "cxa-2019"
+      issueDate: "June 2019"
+      title: "Code XtremeApps 2019 Finalist Open Category"
+      issuedBy: "Infocomm Media Development Authority"
+      descripList:
+        - "I'm not kidding. This was actually my first hackathon in my entire life."
+        - "I participated alongside a friend I knew from secondary school (was in JC at that time) in the open category which was open to participants of all ages and largely consisted of University and Polytechnic students."
+        - "The challenge statement we picked was on smart recycling, and we built a functional locker powered with a raspberry pi and backed with firebase in 24 hours. After a initial pitch during the event, we were later notified that we had gotten into the finalist stage and another pitch to a huge panel of judges was done a few days later."
+        - "Though we did not emerge victorious, it was a valuable experience and largely contributed to my love for participating in on-premise hackathons now."
+  certs:
+    - achievementRoute: "cmls-2019"
+      issueDate: "Oct 2019"
+      title: "Certified Machine Learning Specialist"
+      issuedBy: "Global Science and Technology Forum"
+      descripList:
+        - "This certification required participants to attend a 4 day training course, with a final theory MCQ test at the end and a 2 week project to be submitted before our results would be announced and our cert presented to us."
+        - "I decided to do a project on Natural Language Processing, and built a chatbot from scratch using Keras in Python. I had a scored 87.5% on my MCQ and 86% on my project work component."
+        - "The reason why I took this course was due to the fact that I was interning at DSO at that time, and my project was basically split between red teaming and deep learning. I was mainly working on the red teaming portion, though eventually my supervisor allowed me to join in on the deep learning part after I had learnt more about ML concepts through this cert."
+        - "This cert was also fully subsidised under the IMDA Citrep+ Scheme."
+    - achievementRoute: "ossa-2020"
+      issueDate: "Oct 2020"
+      title: "Organisational Systems Security Analyst"
+      issuedBy: "THINKSECURE"
+      descripList:
+        - "This certification spanned a 4 day training course with a MCQ practical test on the 5th day which consists of theory based questions and practical based questions requiring us to physically interact with the lab machines through their VPN network."
+        - "The marking scheme was new to me, as wrong answers would lower your overall score and not answering questions are actually better in some cases. Nevertheless, I managed to score a percentage of 81.33% out of 100%. 60% was required to pass."
+projects:
+  - projectRoute: "detectivehex"
+    imageUrlList:
+      - "default.jpg"
+    projecTitle: "DetectiveHex"
+    projectPeriod: "June 2020 - Present"
+    tags:
+      - Game Dev
+      - Unity
+      - Infocomm Security
+    builtWith:
+      - Unity Game Engine
+      - C#
+    projectLink: "/notfound"
+    descripList:
+      - Ongoing
+  - projectRoute: "sp-neo"
+    imageUrlList:
+      - ""
+    projectTitle: "SPNeo"
+    projectPeriod: "Sept 2019"
+    tags:
+      - NLP
+      - Graph Database
+    builtWith:
+      - Jupyter Notebook
+      - Keras
+      - Python
+      - Neo4j Graph Database
+    projectLink: "https://github.com/Asienwald/AI-Chatbot-with-Neo4j"
+    descripList:
+      - "This project consists of a chatbot backed by a neo4j graph database. It was built on the idea of a relational graph database which is able to depict the realtime states of SP, represented with the different nodes and relations in the database."
+      - "The graph can then be queried through the chatbot, hence allowing for visitors/new students of SP to find their way around better and also be able to query specific, miniscule details happening around SP. The graph can also be scaled to even represent store queue times, parking lot availability etc."
+      - "This was built in under 24 hours during the duration of the hackathon hence it is not fully completed. I plan to continue on the project someday and add an interface for better user experience."
+  - projectRoute: "sp-travel"
+    imageUrlList:
+      - ""
+    projectTitle: "SP Travel"
+    tags:
+      - "Backend"
+      - "NodeJS"
+      - MySQL
+    builtWith:
+      - Express
+      - MySQL Server
+      - Bootstrap
+    projectLink: "https://github.com/Asienwald/sp-travel"
+    descripList:
+      - "This was done for my Backend Development Module together with another teammate using an Express web server and MySQL database."
+      - "The site is able to serve travel listings, review them and also has an admin console for administration purposes."
+  - projectRoute: "elcare"
+    imageUrlList:
+      - ""
+    projectTitle: "ElCare"
+    tags:
+      - Android App Dev
+      - IBM Cloud
+      - Flask
+      - IoT
+    builtWith:
+      - Android Studio
+      - IBM Watson
+      - Flask Python Framework
+      - ESP8266/Arduino
+    projectLink: "https://github.com/Asienwald/ElCare"
+    descripList:
+      - "This app was built to provide fast followup responses to emergencies involving elderly through Community First Responders (CFRs) around Singapore."
+      - "I mainly worked with the development and design of the app and integrating it with IBM's Watson. More information can be found on my github (click project title)!"
+    
+  
