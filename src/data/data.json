@@ -3,7 +3,7 @@
     "name": "Kar Wei",
     "age": 18,
     "occupation": "Student studying IT Security at Singapore Polytechnic",
-    "status": "Trying to learn more about open source and how I can contribute",
+    "status": "Studying to take the AWS Developer Associate certification",
     "skills": [
       "ReactJS w/ Typescript",
       "Redux",
@@ -234,7 +234,7 @@
         "default.jpg"
       ],
       "projectTitle": "DetectiveHex",
-      "projectPeriod": "June 2020 - Present",
+      "projectPeriod": "Ongoing",
       "tags": [
         "Game Dev",
         "Unity",
@@ -319,6 +319,92 @@
       "descripList": [
         "This app was built to provide fast followup responses to emergencies involving elderly through Community First Responders (CFRs) around Singapore.",
         "I mainly worked with the development and design of the app and integrating it with IBM's Watson. More information can be found on my github (click project title)!"
+      ]
+    },
+    {
+      "projectRoute": "platformer-site",
+      "imageUrlList": [
+        ""
+      ],
+      "projectTitle": "Platformer Site",
+      "projectPeriod": "Oct 2020",
+      "tags": [
+        "Reactjs",
+        "Web Dev",
+        "Redux"
+      ],
+      "builtWith":[
+        "ReactJS with Typescript",
+        "Redux State Management",
+        "Framer Motion"
+      ],
+      "projectLink": "https://github.com/Asienwald/Platformer-Site",
+      "descripList":[
+        "To be added"
+      ]
+    },
+    {
+      "projectRoute": "polyfintech-stonks",
+      "imageUrlList": [
+        ""
+      ],
+      "projectTitle": "Stonks",
+      "projectPeriod": "July 2020",
+      "tags": [
+        "Blockchain",
+        "Decentralised Apps",
+        "Fintech"
+      ],
+      "builtWith":[
+        "Android Studio",
+        "Ganache Development Blockchain",
+        "Truffle Development Environment",
+        "Invision Studio"
+      ],
+      "projectLink": "https://github.com/Asienwald/Polyfintech-Stonks-App",
+      "descripList":[
+        "To be added"
+      ]
+    },
+    {
+      "projectRoute": "sp-spam",
+      "imageUrlList": [
+        ""
+      ],
+      "projectTitle": "SP SPAM App",
+      "projectPeriod": "Feb 2020",
+      "tags": [
+        "Python",
+        "App Dev"
+      ],
+      "builtWith":[
+        "Kivy Python Framework",
+        "SQLite"
+      ],
+      "projectLink": "https://github.com/Asienwald/SP-SPAM",
+      "descripList":[
+        "To be added"
+      ]
+    },
+    {
+      "projectRoute": "cyberwargame-multiplayer",
+      "imageUrlList": [
+        ""
+      ],
+      "projectTitle": "Cyberwargame 3D Multiplayer",
+      "projectPeriod": "Ongoing",
+      "tags": [
+        "Game Dev 3D",
+        "Multiplayer",
+        "Unity"
+      ],
+      "builtWith":[
+        "Unity Game Engine",
+        "Mirror Networking"
+      ],
+      "projectLink": "https://github.com/Asienwald/cyberwargame-multiplayer",
+      "descripList":[
+        "To be added"
       ]
     }
   ]
