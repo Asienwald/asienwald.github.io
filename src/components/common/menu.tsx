@@ -14,6 +14,7 @@ const Menu: React.FC = ({children}) => {
             wheelEnabled={true}
             direction="vertical"
             dragEnabled={true}
+            
         >
             <motion.div
                 exit={{transform: "scale(0)"}}
@@ -24,8 +25,6 @@ const Menu: React.FC = ({children}) => {
                     <div className="row">
                         <div className="col-11 col-md-10 col-lg-8 ml-auto menu">
                                 {children}
-                            {/* <h1 className="mt-4 size-50 color-red">world map</h1> */}
-                            {/* {children} */}
                         </div>
                     </div>
 

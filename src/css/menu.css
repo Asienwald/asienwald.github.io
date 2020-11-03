@@ -6,6 +6,7 @@
     min-height: 80vh;
     margin-bottom: 10vh !important;
     padding: 2vw 5vw 2vw 5vw;
+    user-select: all !important;
 }
 
 @media only screen and (max-width: 500px){

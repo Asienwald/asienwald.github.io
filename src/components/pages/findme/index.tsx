@@ -13,11 +13,28 @@ const FindMePage = () => {
                     text="Find Me"
                 />
 
-                <div className="red d-flex flex-row justify-content-start">
-                    <i className="fab fa-discord text-white findme-icon" ></i>
-                    <i className="fab fa-linkedin findme-icon text-white"></i>
-                    <i className="fab fa-github-square findme-icon text-white"></i>
+                <div className="row mt-5 findme-container">
+                    <div className="col-12 d-flex flex-row text-white mb-4">
+                        <i className="fas fa-envelope findme-icon "></i>
+                        <p className="size-25 khyay mt-auto">asienwald@gmail.com</p>
+                    </div>
+                    <div className="col-12 d-flex flex-row text-white">
+                        <i className="fab fa-discord text-white findme-icon" ></i>
+                        <p className="size-25 khyay mt-auto">@Asienwald#7081</p>
+                    </div>
+                    <div className=" col-12 d-flex flex-row mt-4">
+
+                        <a target="_blank" href="https://www.linkedin.com/in/kar-wei-loh">
+                            <i className="fab fa-linkedin text-white findme-icon" ></i>
+                        </a>
+
+                        <a target="_blank" href="https://github.com/Asienwald">
+                            <i className="fab fa-github-square text-white findme-icon" ></i>
+                        </a>
+                    </div>
                 </div>
+
+                
             </PageWithContent>
         </div>
     );
