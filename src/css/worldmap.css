@@ -45,8 +45,10 @@
     .map-links{
         margin: 0 2vw !important;
     }
+}
+@media only screen and (max-width: 900px){
     .map-link{
-        margin: 2vh 0 !important;
+        margin-top: 3vh! important;
     }
     .circle-point{
         height: 8vw !important;

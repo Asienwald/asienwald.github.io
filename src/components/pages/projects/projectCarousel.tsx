@@ -155,24 +155,13 @@ const ProjectCarousel: React.FC<ICarousel> = ({
                     [...Array(pagesNum)].map((val, index) => {
                         let startIndex = (index == 0)? 0 : index * cardPerPage;
                         let _carouselItems = carouselItems.slice(startIndex, startIndex + cardPerPage)
-                        // console.log([...Array(pagesNum)])
-                        // console.log(index)
-                        // console.log(`startIndex ${startIndex}`)
                         return <div  className="row p-0 m-0 w-100 h-100">
                             {
                                 _carouselItems.map((item: IProject) => {
                                     return(route != item.projectRoute && <div className="col-12 col-md-6 col-lg-4 card-col">
                                             <Link to={`/projects/${item.projectRoute}`}>
                                                 <motion.div className="card text-center px-3 pt-2"
-                                                    // onClick={() => {
-                                                    //     console.log(item);
-                                                    //     // dispatch(AllActions.ModalActions.setProjectModalVisible({
-                                                    //     //     isVisible: true,
-                                                    //     //     ...item
-                                                    //     // }));
 
-                                                    //     history.push(`/projects/${item.projectRoute}`);
-                                                    // }}
                                                     layoutId={`project-container-${item.projectRoute}`}
                                                     style={{cursor: 'pointer'}}
                                                     key={item.projectRoute}
@@ -180,12 +169,17 @@ const ProjectCarousel: React.FC<ICarousel> = ({
                                                     <motion.div className="card-img"
                                                         layoutId={`project-image-${item.projectRoute}`}>
                                                         <img
-                                                            src={item.imageUrlList[0]}
+                                                            src={`/assets/projects/${item.imageUrlList[0]}.jpg`}
+                                                            // src={item.imageUrlList[0]}
+                                                            onError = {(e:any) => {
+                                                                e.target.onerror = null;
+                                                                e.target.src = "/assets/default.jpg";
+                                                            }}
                                                         />
                                                     </motion.div>
                         
                                                     <div className="mt-2">
-                                                        <p className="size-30 color-red">{item.projectRoute}</p>
+                                                        <p className="size-30 color-red">{item.projectTitle}</p>
                                                         {/* <p className="size-20 color-grey">{item.issuedBy}</p> */}
                                                         <p className="size-20 color-grey">
                                                             {

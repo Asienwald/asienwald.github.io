@@ -124,7 +124,7 @@
       {
         "achievementRoute": "dir-honour-roll-2020",
         "issueDate": "AY 2019/2020",
-        "title": "Director's Honour Roll 2019/2020",
+        "title": "Director's Honour Roll",
         "issuedBy": "Singapore Polytechnic",
         "descripList": [
           "This award is awarded to the top 10% of students in the DISM AY 2019/2020 cohort."
@@ -133,7 +133,7 @@
       {
         "achievementRoute": "svrp-2019",
         "issueDate": "Oct 2019",
-        "title": "AiSP SVRP 2019 Silver",
+        "title": "SVRP 2019 Silver",
         "issuedBy": "Association of Information Security Professionals",
         "descripList": [
           "This award signifies my completion of 2 out of 3 pillars in the SVRP Framework.",
@@ -143,7 +143,7 @@
       {
         "achievementRoute": "hackasia-2019",
         "issueDate": "Oct 2019",
-        "title": "Hack.Asia 2019 Hackathon Challenge 1st Runner-Up",
+        "title": "Hack.Asia 2019 2nd Place",
         "issuedBy": "Daimler Mobility",
         "descripList": [
           "I had the honour to team up with 3 of my seniors for this 24 hour hackathon, where we built a prototype and pitched to the attending participants and a panel of judges.",
@@ -157,7 +157,7 @@
       {
         "achievementRoute": "dso-scholarship-2019",
         "issueDate": "2019",
-        "title": "DSO Diploma Scholarship 2019",
+        "title": "DSO Diploma Scholarship",
         "issuedBy": "DSO National Laboratories",
         "descripList": [
           "DSO National Laboratories (DSO) is Singapore’s largest defence research and development (R&D) organisation, with the critical mission to develop technological solutions to sharpen the cutting edge of Singapore's national security.",
@@ -167,7 +167,7 @@
       {
         "achievementRoute": "cys-camp-hackathon-2019",
         "issueDate": "Dec 2019",
-        "title": "CYS Camp Design Thinking Hackathon Champion 2019",
+        "title": "CYS Camp Hackathon Champion",
         "issuedBy": "Cyber Youth Singapore",
         "descripList": [
           "I originally volunteered as a Group Leader in this event to meet new people. Who knew we would actually win the design thinking hackathon lmao.",
@@ -180,7 +180,7 @@
       {
         "achievementRoute": "cys-camp-ctf-2019",
         "issueDate": "Dec 2019",
-        "title": "CYS Camp 10h CTF 3rd Place",
+        "title": "CYS Camp CTF 3rd Place",
         "issuedBy": "Cyber Youth Singapore",
         "descripList": [
           "This 10 hour CTF occured on the last day of the 4 day CYS camp held in December 2019. All participants were required to form teams of 2-3 members to participate in the CTF.",
@@ -192,7 +192,7 @@
       {
         "achievementRoute": "cxa-2019",
         "issueDate": "June 2019",
-        "title": "Code XtremeApps 2019 Finalist Open Category",
+        "title": "CXA 2019 Finalist (Open Category)",
         "issuedBy": "Infocomm Media Development Authority",
         "descripList": [
           "I'm not kidding. This was actually my first hackathon in my entire life.",
@@ -252,7 +252,7 @@
     {
       "projectRoute": "sp-neo",
       "imageUrlList": [
-        ""
+        "sp-neo-1"
       ],
       "projectTitle": "SPNeo",
       "projectPeriod": "Sept 2019",

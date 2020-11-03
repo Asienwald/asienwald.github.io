@@ -5,12 +5,11 @@ import '../../../css/modal.css'
 import '../../../css/carousel.css'
 import '../../../css/misc.css'
 import { AppState, IProject } from '../../../types/interfaces';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import {useHistory} from 'react-router';
-import { AllActions } from '../../../actions';
 import { Link } from 'react-router-dom';
-import { Scroll } from 'framer';
 import {getProject} from '../../../actions/selectors';
+
 
 interface IProjectsModal{
     route: string
@@ -128,22 +127,24 @@ const ProjectsModal: React.FC<IProjectsModal> = ({
                         animate={{transform: "scale(1)"}}
                         layoutId={`project-container-${route}`}
                         key = {`projects-modal-${route}`}  
-                        // drag="y"
                     >
                         <div className="row">
                             <div className="col-12 col-lg-6">
-                                <motion.div className="left-view"
+                                <motion.div className="left-view "
                                     layoutId={`project-image-${route}`}
                                 >   
                                     <AnimatePresence>
                                         <motion.img
                                             key={selectedImage}
-                                            src={selectedImage}
                                             exit={{display: "none"}}
-                                            // exit={{transform: "scale(0)"}}
                                             initial={{transform: "scale(0.8)"}}
                                             animate={{transform: "scale(1)"}}
-                                            className=""
+                                            className="selected-img "
+                                            onError = {(e:any) => {
+                                                e.target.onerror = null;
+                                                e.target.src = "/assets/default.jpg";
+                                            }}
+                                            src={`/assets/projects/${selectedImage}.jpg`}
                                         />
                                     </AnimatePresence>
                                     
@@ -172,11 +173,16 @@ const ProjectsModal: React.FC<IProjectsModal> = ({
                                                                                 setSelectedImage(src);
                                                                             }}
                                                                         >
-                                                                            <img src={src}
+                                                                            <img src={`/assets/projects/${src}.jpg`}
                                                                             style={{
                                                                                 backgroundSize: "cover"
                                                                             }}
-                                                                            className=""/>
+                                                                            className=""
+                                                                            onError = {(e:any) => {
+                                                                                e.target.onerror = null;
+                                                                                e.target.src = "/assets/default.jpg";
+                                                                            }}
+                                                                            />
                                                                             
                                                                         </div>
                                                             )})
@@ -200,16 +206,14 @@ const ProjectsModal: React.FC<IProjectsModal> = ({
                                                 style={{
                                                     transform: "rotate(90deg)"
                                                 }}
-                                                className="carousel-btn "
+                                                className="carousel-btn"
                                                 onClick={() => {
                                                     ((currentPage - 1) < 0)?setCurrentPage(pagesNum - 1): setCurrentPage(currentPage -1)
-                                                    // setCurrentPage(currentPage - 1)
                                                 }}
                                             />
                                         </motion.div>
                                         <div className=" indicator-wrapper  ">
                                             {[...Array(pagesNum)].map((val, index) => {
-                                                // console.log(`creating new indicator!`)
                                                 return (
                                                     <Frame
                                                         // Visual & layout
@@ -231,7 +235,6 @@ const ProjectsModal: React.FC<IProjectsModal> = ({
                                                         // Required by React
                                                         key={index}
                                                         onClick={() => {
-                                                            // console.log(`indicator ${index} pressed!`)
                                                             setCurrentPage(index)
                                                         }}
                                                         className=""
@@ -280,7 +283,7 @@ const ProjectsModal: React.FC<IProjectsModal> = ({
                                                     />
                                                 </motion.div>
                                                 <motion.div variants={textMotion}>
-                                                    <p className="size-40 khyay">{route}</p>
+                                                    <p className="size-40 khyay">{projectTitle}</p>
                                                 </motion.div>
                                             
                                         </motion.div>
@@ -300,8 +303,6 @@ const ProjectsModal: React.FC<IProjectsModal> = ({
                                                     return <li className="size-15">{val}</li>
                                                 })
                                             }
-                                            {/* <li className="size-15">bruh</li>
-                                            <li className="size-15">bruh</li> */}
                                         </ul>
                                     </div>
        

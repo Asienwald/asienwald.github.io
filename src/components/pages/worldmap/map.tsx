@@ -25,7 +25,7 @@ function Map() {
             <h1 className="mt-5 size-50 color-red">world map</h1>
 
             <div className="row text-white mx-3 map-links">
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-lg-6 ">
                     <div className="row">
                         <div className="col-12">
                             <div className="d-flex flex-row map-link mt-4"
@@ -81,7 +81,7 @@ function Map() {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-lg-6 ">
                     <div className="row">
                         <div className="col-12">
                             <div className="d-flex flex-row map-link mt-4"
@@ -94,14 +94,26 @@ function Map() {
                                 <p className="size-45 my-auto ml-4">projects</p>
                             </div>
                             <div className="d-flex flex-row map-link mt-4"
-                                onClick = {() => {jumpTo("aboutthissite")}}
+                                onClick = {() => {jumpTo("blog")}}
                             >
                                 <div className="circle-point"
                                 style={circleStyle}>
                                     <div className="circle-point-inside"></div>
                                 </div>
-                                <p className="size-45 my-auto ml-4">about site</p>
+                                <p className="size-45 my-auto ml-4">My Blog</p>
                             </div>
+                            <a href="https://github.com/Asienwald/asienwald.github.io" target="_blank">
+                                <div className="d-flex flex-row map-link mt-4"
+                                    // onClick = {() => {history.push()}}
+                                >
+                                    <div className="circle-point"
+                                    style={circleStyle}>
+                                        <div className="circle-point-inside"></div>
+                                    </div>
+                                    <p className="size-45 my-auto ml-4">about site</p>
+                                </div>
+                            </a>
+                            
 
                             <div className="d-flex flex-row map-link mt-4"
                                 onClick = {() => {jumpTo("findme")}}

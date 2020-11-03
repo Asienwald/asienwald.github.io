@@ -9,6 +9,7 @@
     border-radius: 50px;
     padding: 5%;
     box-shadow: 5px 10px 8px #888888;
+    margin-bottom: 5vh;
 }
 .modal-container .row{
     min-height: 70vh;
@@ -49,6 +50,17 @@
 .projects-modal .built-with-wrapper{
     border-left: 6px solid #575757;
     padding-left: 1vw;
+}
+
+.left-view .selected-img{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 500px){
+    .achievements-modal .size-20, .projects-modal .size-20{
+        font-size: 4vw;
+    }
 }
 
 @media only screen and (max-width: 900px){

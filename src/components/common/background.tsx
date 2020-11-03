@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
 import {useSelector} from 'react-redux'
-import {IEnvState} from '../../types/interfaces'
+import {AppState} from '../../types/interfaces';
 
 // components
 import Parallax from './parallax';
 
 
 function Background() {
-    const parallax_1 = "/assets/forest_bg.png";
-    const parallax_2 = "/assets/forest_parallax_2_small.png";
-    const parallax_3 = "/assets/forest_parallax_3_small.png";
-    const parallax_4 = "/assets/forest_parallax_4_med.png";
 
-    // const moving = useSelector((state: IEnvState) => {
-    //     return state.env.moving
-    // })
+    const {envBg} = useSelector((state: AppState) => {
+        return state.env;
+    })
+
+    const parallax_1 = `/assets/${envBg}_bg.png`;
+    const parallax_2 = `/assets/${envBg}_parallax_2.png`;
+    const parallax_3 = `/assets/${envBg}_parallax_3.png`;
+    const parallax_4 = `/assets/${envBg}_parallax_4.png`;
+
 
     return (
         <div>

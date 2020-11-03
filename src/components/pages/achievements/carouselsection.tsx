@@ -36,7 +36,6 @@ const CarouselSection: React.FC<ICarousel> = ({
     const changePagesNum = () => {
         let extraPage = (carouselItems.length % cardPerPage == 0)? 0: 1;
         setPagesNum((~~(carouselItems.length / cardPerPage) == 0)? 1 : ~~(carouselItems.length / cardPerPage) + extraPage)
-        // console.log(pagesNum);
     }
 
     useEffect(() => {
@@ -74,14 +73,12 @@ const CarouselSection: React.FC<ICarousel> = ({
                             className="carousel-btn "
                             onClick={() => {
                                 ((currentPage - 1) < 0)?setCurrentPage(pagesNum - 1): setCurrentPage(currentPage -1)
-                                // setCurrentPage(currentPage - 1)
                             }}
                         />
                     </motion.div>
                     
                     <div className=" indicator-wrapper">
                         {[...Array(pagesNum)].map((val, index) => {
-                            // console.log(`creating new indicator!`)
                             return (
                                 <Frame
                                     // Visual & layout
@@ -103,7 +100,6 @@ const CarouselSection: React.FC<ICarousel> = ({
                                     // Required by React
                                     key={index}
                                     onClick={() => {
-                                        // console.log(`indicator ${index} pressed!`)
                                         setCurrentPage(index)
                                     }}
                                     className=""
@@ -143,8 +139,6 @@ const CarouselSection: React.FC<ICarousel> = ({
                 onChangePage={(current, previous) => {
                     setCurrentPage(current)
                 }}
-                // width="56vw"
-                // height="40vh"
                 center={false}
                 className=" page-container "
                 padding={0}
@@ -154,9 +148,7 @@ const CarouselSection: React.FC<ICarousel> = ({
                     [...Array(pagesNum)].map((val, index) => {
                         let startIndex = (index == 0)? 0 : index * cardPerPage;
                         let _carouselItems = carouselItems.slice(startIndex, startIndex + cardPerPage)
-                        // console.log([...Array(pagesNum)])
-                        // console.log(index)
-                        // console.log(`startIndex ${startIndex}`)
+
                         return <div  className="row p-0 m-0 h-100 w-100">
                             {
                                 _carouselItems.map((item: IAchievement) => {
@@ -172,11 +164,15 @@ const CarouselSection: React.FC<ICarousel> = ({
                                                         >
                                                             <img
                                                                 src={`/assets/achievements/${item.achievementRoute}.jpg`} 
+                                                                onError = {(e:any) => {
+                                                                    e.target.onerror = null;
+                                                                    e.target.src = "/assets/default.jpg";
+                                                                }}
                                                             />
                                                         </motion.div>
                             
                                                         <div className="mt-2">
-                                                            <p className="size-30 color-red">{item.achievementRoute}</p>
+                                                            <p className="size-30 color-red">{item.title}</p>
                                                             <p className="size-20 color-grey">{item.issuedBy}</p>
                                                         </div>
                                                     </motion.div>

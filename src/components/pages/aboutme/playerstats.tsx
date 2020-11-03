@@ -46,9 +46,9 @@ const PlayerStats: React.FC = () => {
                 </div>
             </div>
             <div className="row mt-3 second-row">
-                <div className="col-12 col-lg-4 text-center">
+                <div className="col-12 col-lg-4">
                     <div className="orange-panel size-25 text-white text-left p-3 player-skills">
-                        <p className="color-purple size-35 mb-0 ml-3">Tools Used</p>
+                        <p className="color-purple size-35 mb-0">Tools Used</p>
                         <ul>
                             {
                                 toolsUsed.map((val) => {
@@ -62,8 +62,8 @@ const PlayerStats: React.FC = () => {
                 </div>
                 <div className="col-12 col-lg-8">
                     <div className="orange-panel size-25 text-white text-left p-3 player-skills">
-                        <p className="color-lightblue size-35 mb-0 ml-3">skills</p>
-                        <div className="row px-3">
+                        <p className="color-lightblue size-35 mb-0">skills</p>
+                        <div className="row px-0">
                             <div className="col-12 col-md-6">
                                 <ul>
                                     {

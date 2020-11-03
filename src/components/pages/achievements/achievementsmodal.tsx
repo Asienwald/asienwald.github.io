@@ -13,8 +13,6 @@ interface IAchievementsModal{
 }
 
 const AchievementsModal: React.FC<IAchievementsModal> = ({route}) => {
-    // const [isVisible, setIsVisble] = useState<boolean>(true);
-    // const dispatch = useDispatch();
     const history = useHistory();
 
     const {achievementRoute, issueDate, title, issuedBy, descripList} = useSelector((state: AppState): IAchievement => {
@@ -43,7 +41,11 @@ const AchievementsModal: React.FC<IAchievementsModal> = ({route}) => {
                                         layoutId={`achievement-image-${route}`}
                                     >
                                         <img
-                                            src={`/assets/achievements/${achievementRoute}.jpg`}  
+                                            src={`/assets/achievements/${achievementRoute}.jpg`}
+                                            onError = {(e:any) => {
+                                                e.target.onerror = null;
+                                                e.target.src = "/assets/default.jpg";
+                                            }}
                                         />
                                     </motion.div>
                                 </div>
@@ -51,16 +53,15 @@ const AchievementsModal: React.FC<IAchievementsModal> = ({route}) => {
                                     <motion.div className="right-view khyay"
                                     >
                                         <p className="color-grey size-20">{issueDate}</p>
-                                        <p className="size-40">{achievementRoute}</p>
+                                        <p className="size-40">{title}</p>
                                         <p className="size-20 color-grey">{issuedBy}</p>
                                         <div style={{height: "8vh"}}></div>
-                                        <div className="descrip-container color-darkgrey khyay">
+                                        <div className="descrip-container color-darkgrey khyay size-15">
                                             {
                                                 descripList.map((val) => {
                                                     return <p>{val}</p>
                                                 })
                                             }
-                                            {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> */}
                                         </div>
                                     </motion.div>
                                     

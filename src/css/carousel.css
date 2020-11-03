@@ -93,14 +93,14 @@
 
 @media only screen and (max-width: 500px){
     .carousel-section{
-        min-height: 80vh;
+        min-height: 90vh;
     }
     .card{
-        margin-top: 3vh;
+        margin-top: 2vh;
     }
     .page-container{
         min-width: 78vw !important;
-        min-height: 70vh !important;
+        min-height: 80vh !important;
     }
     .my-modal .page-container{
         min-height: 20vh !important;
@@ -122,6 +122,10 @@
     .indicator-wrapper{
         min-width: 30vw;
     }
+
+    .carousel-section .size-20, .project-carousel .size-20{
+        font-size: 4vw;
+    }
 }
 @media only screen and (min-width: 501px) and (max-width: 900px){
     .page-container{
@@ -138,15 +142,4 @@
     .my-modal .carousel-controls{
         position: static;
     }
-
-    /* .my-modal .page-container{
-        margin-top: 5vh;
-        margin-left: 2vw;
-    }
-    .my-modal .left-view{
-        min-height: 116vh !important;
-    } */
-    /* .carousel-fill{
-        height: 20vh;
-    } */
 }

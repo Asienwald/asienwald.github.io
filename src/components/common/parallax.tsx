@@ -7,8 +7,8 @@ import {IEnvState} from '../../types/interfaces'
 const Parallax: React.FC<IParallax> = ({image, index, children}) => {
     const [bg, setBg] = useState<JSX.Element[]>([]);
 
-    const moving = useSelector((state: AppState) => {
-        return state.env.moving
+    const {moving} = useSelector((state: AppState) => {
+        return state.env;
     })
 
     const spawnParallax = (start: number) => {

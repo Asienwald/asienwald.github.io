@@ -93,10 +93,10 @@ h1{
 
 /* debug */
 .red{
-    border: 2px red solid;
+    border: 2px red solid !important;
 }
 .blue{
-    border: 2px blue solid;
+    border: 2px blue solid !important;
 }
 
 /* list styles */
@@ -143,6 +143,9 @@ ul{
 }
 .color-cyan{
     color: #02FFF0;
+}
+.color-linkedinblue{
+    color: #0e76a8;
 }
 
 /* font sizes */
