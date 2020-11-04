@@ -41,6 +41,15 @@
     white-space: normal;
 }
 
+@media (min-height: 1200px) and (orientation: portrait){
+    .section{
+        min-height: 15vh;
+    }
+    .section-header{
+        width: 15vh;
+    }
+}
+
 @media only screen and (max-width: 900px){
     .section{
         padding-left: 5vw;

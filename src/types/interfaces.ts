@@ -82,6 +82,13 @@ export interface IProject{
     descripList: string[]
 }
 
+export interface IContact{
+    email: string,
+    discord: string,
+    linkedinLink: string,
+    githubLink: string
+}
+
 
 // app and reducer states
 export interface AppState{
@@ -97,7 +104,8 @@ export interface IDataState{
     achievements: {
         awards: IAchievement[],
         certs: IAchievement[]
-    }
+    },
+    contact: IContact
 }
 
 

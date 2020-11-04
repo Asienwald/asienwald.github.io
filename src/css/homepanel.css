@@ -23,10 +23,10 @@
 .menu-text{
     z-index: 3;
     width: 100%;
-    margin-bottom: 10vh;
+    margin-bottom: 5vw;
 }
 .menu-text .size-60{
-    margin-bottom: 5vh !important;
+    margin-bottom: 3vw !important;
 }
 .menu-chains{
     flex: 1;
@@ -48,7 +48,9 @@
     width: 100%;
 }
 
-@media only screen and (max-width: 500px){
+
+
+@media only screen and (max-width: 900px){
 
     .menu-text{
         margin-bottom: 5vh;
@@ -68,3 +70,12 @@
         /* margin-bottom: 5vh !important; */
     }
 }
+
+/* @media (min-height: 1200px) and (orientation: portrait){
+    .menu-text{
+        margin-bottom: 3vh;
+    }
+    .menu-text .size-60{
+        margin-bottom: 2vh !important;
+    }
+} */

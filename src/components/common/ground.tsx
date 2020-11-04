@@ -12,6 +12,9 @@ function Ground() {
     const {moving, envBg} = useSelector((state: AppState) => {
         return state.env;
     })
+    const {linkedinLink, githubLink} = useSelector((state: AppState) => {
+        return state.data.contact;
+    })
 
     const spawnGroundTile = (start: number) => {
         if(!moving){
@@ -66,11 +69,11 @@ function Ground() {
                 <p>© 2020 Loh Kar Wei All Rights Reserved</p>
             </div>
             <div className="position-fixed footer-icons d-flex flex-row">
-                <a target="_blank" href="https://www.linkedin.com/in/kar-wei-loh">
+                <a target="_blank" href={linkedinLink}>
                     <i className="fab fa-linkedin text-white footer-icon" ></i>
                 </a>
 
-                <a target="_blank" href="https://github.com/Asienwald">
+                <a target="_blank" href={githubLink}>
                     <i className="fab fa-github-square text-white footer-icon" ></i>
                 </a>
             </div>

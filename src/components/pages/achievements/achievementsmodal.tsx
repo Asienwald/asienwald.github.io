@@ -45,6 +45,7 @@ const AchievementsModal: React.FC<IAchievementsModal> = ({route}) => {
                                                 e.target.onerror = null;
                                                 e.target.src = "/assets/default.jpg";
                                             }}
+                                            className="selected-img"
                                         />
                                     </motion.div>
                                 </div>
