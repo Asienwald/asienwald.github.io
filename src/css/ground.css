@@ -8,7 +8,7 @@
 }
 
 .ground{
-    background-image: url('/assets/ground.png');
+    /* background-image: url('/assets/ground.png'); */
     background-repeat: repeat-x;
     width: 100vw;
     height: 8vh;

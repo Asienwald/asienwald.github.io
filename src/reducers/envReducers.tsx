@@ -1,10 +1,22 @@
 import { CHANGE_ENV, CHANGE_MOVING, SET_BACKWORLD, SET_PLAYER_CENTER, SET_PLAYER_INVERT } from "../actions/actiontypes";
 import {IEnvState, TEnvActionTypes} from '../types/interfaces'
 
+const min = 0;
+const max = 2;
+const rand = Math.floor(Math.random() * (max - min + 1)) + min;
+
+const bgs = [
+    "cyber",
+    "forest",
+    "retro"
+]
+
 const initialEnvState:IEnvState = {
     moving: true,
     playerCenter: true,
-    envBg: "forest",
+    envBg: bgs[rand],
+    bgCount: max + 1,   // 3
+    bgList: bgs,
     backToWorld: false,
     playerInvert: false
 }

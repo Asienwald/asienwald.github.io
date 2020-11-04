@@ -231,13 +231,13 @@ ul{
     }
 
     /* special stylings */
-    .projects-modal .size-40{
+    .my-modal .size-40{
         font-size: 10vw;
     }
-    .projects-modal .size-20{
+    .my-modal .size-20{
         font-size: 4vw;
     }
-    .projects-modal .size-15{
+    .my-modal .size-15{
         font-size: 3.5vw;
     }
 }

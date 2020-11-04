@@ -133,18 +133,19 @@ const ProjectsModal: React.FC<IProjectsModal> = ({
                                 <motion.div className="left-view "
                                     layoutId={`project-image-${route}`}
                                 >   
-                                    <AnimatePresence>
+                                    <AnimatePresence exitBeforeEnter>
                                         <motion.img
                                             key={selectedImage}
-                                            exit={{display: "none"}}
-                                            initial={{transform: "scale(0.8)"}}
-                                            animate={{transform: "scale(1)"}}
-                                            className="selected-img "
+                                            // layoutId={selectedImage}
+                                            exit={{scale: 0.8}}
+                                            initial={{scale: 0.8}}
+                                            animate={{scale: 1}}
+                                            className="selected-img"
                                             onError = {(e:any) => {
                                                 e.target.onerror = null;
                                                 e.target.src = "/assets/default.jpg";
                                             }}
-                                            src={`/assets/projects/${selectedImage}.jpg`}
+                                            src={`/assets/projects/${selectedImage}.jpg`}  
                                         />
                                     </AnimatePresence>
                                     
@@ -182,6 +183,8 @@ const ProjectsModal: React.FC<IProjectsModal> = ({
                                                                                 e.target.onerror = null;
                                                                                 e.target.src = "/assets/default.jpg";
                                                                             }}
+                                                                            key={`projcarousel-${src}`}
+                                                                            
                                                                             />
                                                                             
                                                                         </div>

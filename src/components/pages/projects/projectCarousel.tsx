@@ -168,13 +168,15 @@ const ProjectCarousel: React.FC<ICarousel> = ({
                                                 >
                                                     <motion.div className="card-img"
                                                         layoutId={`project-image-${item.projectRoute}`}>
-                                                        <img
+                                                        <motion.img
                                                             src={`/assets/projects/${item.imageUrlList[0]}.jpg`}
                                                             // src={item.imageUrlList[0]}
                                                             onError = {(e:any) => {
                                                                 e.target.onerror = null;
                                                                 e.target.src = "/assets/default.jpg";
                                                             }}
+                                                            layoutId={item.imageUrlList[0]}
+                                                            key={item.imageUrlList[0]}
                                                         />
                                                     </motion.div>
                         

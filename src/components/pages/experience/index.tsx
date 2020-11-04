@@ -14,7 +14,7 @@ const ExperiencePage: React.FC = () => {
         <div>
             <PageWithContent>
                 <Title
-                    text = "player work experience"
+                    text = "player experience"
                 />
                 {
                     positionList.map((pos: IPosition) => {

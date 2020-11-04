@@ -34,7 +34,25 @@ Action types used for reducers are in `src/actions/actionTypes.tsx`
 ### Animations
 Most animations are controlled by the `framer-motion` library except the environment animations which are coded with css keyframes.  
 
+Environment is randomised on every page load. There are currently 3 types:  
+- cyber
+- retro
+- forest
+Environment can be changed from the button on the bottom left. Though I didn't include this feature in this repo.  
 
 ### Looking Forward
 Some features I would like to implement in the future includes  
 - Implementing a physics engine to add game features like player controls and platforms
+
+
+### Attributes
+Background and player sprites are from [OpenGameArt.org](https://opengameart.org/)  
+Icons are from [Font Awesome](https://fontawesome.com/) and [Icons8](https://icons8.com/)  
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>  
+Source code is MIT licensed. Content is copryrighted.
+
+
+### Screenshots
+![screenshot](/gitimages/ss_01.jpg)
+![screenshot](/gitimages/ss_02.jpg)
+![screenshot](/gitimages/ss_03.jpg)

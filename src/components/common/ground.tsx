@@ -10,8 +10,8 @@ function Ground() {
     const [ground, setGround] = useState<JSX.Element[]>([]);
     // const [moving, setMoving] = useState(moving);
 
-    const moving = useSelector((state: AppState) => {
-        return state.env.moving
+    const {moving, envBg} = useSelector((state: AppState) => {
+        return state.env;
     })
 
     const spawnGroundTile = (start: number) => {
@@ -20,7 +20,8 @@ function Ground() {
             className="ground position-fixed" 
             style = {{
                 animationPlayState: "paused",
-                right: `${start}vw`
+                right: `${start}vw`,
+                backgroundImage: `url("/assets/${envBg}_ground.png")`
             }}
             ></div>
 
@@ -30,7 +31,8 @@ function Ground() {
                 className="ground position-fixed" 
                 style = {{
                     right: `${start}vw`,
-                    animationPlayState: "running"
+                    animationPlayState: "running",
+                    backgroundImage: `url("/assets/${envBg}_ground.png")`
                 }}
             ></div>
 
@@ -39,7 +41,7 @@ function Ground() {
     }
 
     const spawnGround = () => {
-        let _ground: JSX.Element[] = [];
+        let _ground: JSX.Element[] = [];  
         _ground.push(spawnGroundTile(0));
         _ground.push(spawnGroundTile(-100));
         setGround(_ground);
@@ -53,7 +55,7 @@ function Ground() {
     // spawn ground again when moving changes
     useEffect(() => {
         spawnGround();
-    }, [moving, window.innerWidth])
+    }, [moving, window.innerWidth, envBg])
 
 
     return (

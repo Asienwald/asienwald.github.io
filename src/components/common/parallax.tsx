@@ -1,8 +1,8 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../../css/background.css';
+import '../../css/misc.css';
 import {AppState, IParallax} from './../../types/interfaces'
 import {useSelector} from 'react-redux'
-import {IEnvState} from '../../types/interfaces'
 
 const Parallax: React.FC<IParallax> = ({image, index, children}) => {
     const [bg, setBg] = useState<JSX.Element[]>([]);

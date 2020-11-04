@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Ground from './ground';
 import Background from './background';
 import BackToWorld from './backtoworld';
+import EnvButton from './envbutton';
 
 
 function Environment() {
@@ -18,6 +19,8 @@ function Environment() {
             <Background
                 // moving = {props.moving}
             />
+
+            <EnvButton/>
         </div>
     );
 }

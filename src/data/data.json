@@ -107,6 +107,16 @@
         ]
       },
       {
+        "role": "Event Organiser",
+        "division": "YCEP 2020",
+        "organisation": "Cyber Youth Singapore",
+        "positionPeriod": "May 2020",
+        "descriptionList": [
+          "Event Coordinator and Lead Lecturer for the Youth Cyber Exploration Programme lead by CYS in conjuntion with SP and CSA which attracted a total of 210 secondary school students from around Singapore.",
+          "Other roles include Content Creator and CTF Challenge Creator."
+        ]
+      },
+      {
         "role": "Student Intern",
         "division": "Information Division",
         "organisation": "DSO National Laboratories",
@@ -231,7 +241,7 @@
     {
       "projectRoute": "detectivehex",
       "imageUrlList": [
-        "default.jpg"
+        "detectivehex-1"
       ],
       "projectTitle": "DetectiveHex",
       "projectPeriod": "Ongoing",
@@ -242,11 +252,15 @@
       ],
       "builtWith": [
         "Unity Game Engine",
-        "C#"
+        "Unity WebGL",
+        "C#",
+        "Firebase"
       ],
-      "projectLink": "/notfound",
+      "projectLink": "https://detectivehex-66530.web.app/",
       "descripList": [
-        "Ongoing"
+        "A SOCA R&D project I'm leading, built to be used in SOCA's outreach events to teach secondary school students in Singapore the basics of infocomm security.",
+        "This browser-based game is built using the Unity game engine and WebGL, and hosted using Firebase.",
+        "This game is currently under development, but you can view our 1st draft by clicking on the title!"
       ]
     },
     {
@@ -276,7 +290,7 @@
     {
       "projectRoute": "sp-travel",
       "imageUrlList": [
-        ""
+        "sp-travel-1"
       ],
       "projectTitle": "SP Travel",
       "projectPeriod": "June - Oct 2020",
@@ -299,7 +313,15 @@
     {
       "projectRoute": "elcare",
       "imageUrlList": [
-        ""
+        "elcare-1",
+        "elcare-2",
+        "elcare-3",
+        "elcare-4",
+        "elcare-5",
+        "elcare-6",
+        "elcare-7",
+        "elcare-8",
+        "elcare-9"
       ],
       "projectTitle": "ElCare",
       "projectPeriod": "Sept 2020",
@@ -324,7 +346,9 @@
     {
       "projectRoute": "platformer-site",
       "imageUrlList": [
-        ""
+        "platformer-site-1",
+        "platformer-site-2",
+        "platformer-site-3"
       ],
       "projectTitle": "Platformer Site",
       "projectPeriod": "Oct 2020",
@@ -340,13 +364,17 @@
       ],
       "projectLink": "https://github.com/Asienwald/Platformer-Site",
       "descripList":[
-        "To be added"
+        "A site built for my portfolio and at the same time learn more about react, redux and typescript.",
+        "This website is actually my first site built with React! And it's also the one you're currently looking at now."
       ]
     },
     {
       "projectRoute": "polyfintech-stonks",
       "imageUrlList": [
-        ""
+        "stonks-1",
+        "stonks-2",
+        "stonks-3",
+        "stonks-4"
       ],
       "projectTitle": "Stonks",
       "projectPeriod": "July 2020",
@@ -363,13 +391,18 @@
       ],
       "projectLink": "https://github.com/Asienwald/Polyfintech-Stonks-App",
       "descripList":[
-        "To be added"
+        "This app was submitted for the Polyfintech 100 API Hackathon 2020. It serves as a decentralised app at educating and empowering youths on financial literacy and the benefits cryptocurrencies can bring.",
+        "I mainly worked with the design and development of the application in Android Studio."
       ]
     },
     {
       "projectRoute": "sp-spam",
       "imageUrlList": [
-        ""
+        "sp-spam-1",
+        "sp-spam-2",
+        "sp-spam-3",
+        "sp-spam-4",
+        "sp-spam-5"
       ],
       "projectTitle": "SP SPAM App",
       "projectPeriod": "Feb 2020",
@@ -383,13 +416,15 @@
       ],
       "projectLink": "https://github.com/Asienwald/SP-SPAM",
       "descripList":[
-        "To be added"
+        "This was an assignment done for school but I took it upon myself to add additional features, including a user interface built with Kivy.",
+        "A server is run alongside the client program to serve food orders through the interface.",
+        "The original assignment only asked for a command line interface for the client and server."
       ]
     },
     {
       "projectRoute": "cyberwargame-multiplayer",
       "imageUrlList": [
-        ""
+        "cyberwargame-1"
       ],
       "projectTitle": "Cyberwargame 3D Multiplayer",
       "projectPeriod": "Ongoing",
@@ -404,7 +439,56 @@
       ],
       "projectLink": "https://github.com/Asienwald/cyberwargame-multiplayer",
       "descripList":[
-        "To be added"
+        "A 3D Cyber Wargame tower defense multiplayer game set in a computeristic world with a cyber security theme.",
+        "This project was started earlier this year (2020) but placed on halt due to covid and other commitments.",
+        "I plan to setup a simple LAN server/client feature to allow for multiplaying through the use of Mirror, an open source networking for Unity."
+      ]
+    },
+    {
+      "projectRoute": "isears",
+      "imageUrlList": [
+        "isear-1"
+      ],
+      "projectTitle": "I.S.E.A.R",
+      "projectPeriod": "Oct 2019",
+      "tags": [
+        "AR",
+        "Infocomm Security",
+        "AWS"
+      ],
+      "builtWith":[
+        "AWS Sumerian",
+        "HTML"
+      ],
+      "projectLink": "https://github.com/hanscau/I.S.E.A.R",
+      "descripList":[
+        "Teaching infocomm security through the use of Augmented Reality and gamification."
+      ]
+    },
+    {
+      "projectRoute": "restation",
+      "imageUrlList": [
+        "restation-1",
+        "restation-2"
+      ],
+      "projectTitle": "REStation",
+      "projectPeriod": "July 2019",
+      "tags": [
+        "Web Dev",
+        "Arduino",
+        "Firebase"
+      ],
+      "builtWith":[
+        "Firebase",
+        "Bootstrap",
+        "Arduino"
+      ],
+      "projectLink": "https://github.com/Hackin7/ReStation",
+      "descripList":[
+        "ReStation acts as a middle-man for people to declutter their homes and list out unused items for others to claim and use.",
+        "The solution features an account system, listing and claiming system and milestone system to incentivise the act of recycling your everyday items.",
+        "This project was built in less than 24 hours and I mainly worked with the website and backend integration with the raspberry pi/arduino powered locker.",
+        "This project was done in my first hackathon when I still didn't know how to use github!"
       ]
     }
   ]

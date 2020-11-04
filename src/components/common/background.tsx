@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import {useSelector} from 'react-redux'
 import {AppState} from '../../types/interfaces';
 
@@ -7,23 +7,32 @@ import Parallax from './parallax';
 
 
 function Background() {
+    const [background, setBackground] = useState<JSX.Element>(<div></div>)
 
     const {envBg} = useSelector((state: AppState) => {
         return state.env;
     })
 
-    const parallax_1 = `/assets/${envBg}_bg.png`;
-    const parallax_2 = `/assets/${envBg}_parallax_2.png`;
-    const parallax_3 = `/assets/${envBg}_parallax_3.png`;
-    const parallax_4 = `/assets/${envBg}_parallax_4.png`;
 
+    const spawnBackground = () => {
+        setBackground (
+            <div>
+                <Parallax image={`/assets/${envBg}_bg.png`} index={0} key={`${envBg}-background-1`}/>
+                <Parallax image={`/assets/${envBg}_parallax_2.png`} index={24} key={`${envBg}-background-2`}/>
+                <Parallax image={`/assets/${envBg}_parallax_3.png`} index={16} key={`${envBg}-background-3`}/>
+                <Parallax image={`/assets/${envBg}_parallax_4.png`} index={10} key={`${envBg}-background-4`}/>
+            </div>
+        )
+    }
+
+    useEffect(() => {
+        console.log("BACKGOUND CHANGED!")
+        spawnBackground()
+    }, [envBg])
 
     return (
         <div>
-            <Parallax image={parallax_1} index={0}/>
-            <Parallax image={parallax_2} index={24} />
-            <Parallax image={parallax_3} index={16}/>
-            <Parallax image={parallax_4} index={10}/>
+            {background}
         </div>
     );
 }

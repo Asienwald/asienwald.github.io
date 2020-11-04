@@ -1,4 +1,4 @@
-import { CHANGE_ENV, CHANGE_MOVING, SET_ACHIEVEMENT_MODAL, SET_BACKWORLD, SET_PLAYER_CENTER, SET_PLAYER_INVERT, SET_PROJECT_MODAL } from "../actions/actiontypes";
+import { CHANGE_ENV, CHANGE_MOVING, SET_BACKWORLD, SET_PLAYER_CENTER, SET_PLAYER_INVERT } from "../actions/actiontypes";
 
 
 export interface IParallax{
@@ -109,6 +109,8 @@ export interface IEnvState{
     moving: boolean
     playerCenter: boolean
     envBg: string
+    bgCount: number
+    bgList: string[]
     backToWorld: boolean
     playerInvert: boolean
 }

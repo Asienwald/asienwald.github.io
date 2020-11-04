@@ -1,12 +1,11 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useState } from 'react';
-import '../../../css/modal.css'
-import '../../../css/misc.css'
+import React from 'react';
 import { AppState, IAchievement } from '../../../types/interfaces';
-import { useDispatch, useSelector } from 'react-redux';
-import { AllActions } from '../../../actions';
+import { useSelector } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
 import { getAchievement } from '../../../actions/selectors';
+import '../../../css/modal.css'
+import '../../../css/misc.css'
 
 interface IAchievementsModal{
     route:string
@@ -24,7 +23,7 @@ const AchievementsModal: React.FC<IAchievementsModal> = ({route}) => {
     }
 
     return (
-        <div className="achievements-modal">
+        <div className="achievements-modal my-modal">
             <AnimatePresence>
                 {(route && 
                         <motion.div
