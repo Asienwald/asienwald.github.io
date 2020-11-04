@@ -104,7 +104,6 @@ function Map() {
                             </div>
                             <a href="https://github.com/Asienwald/asienwald.github.io" target="_blank">
                                 <div className="d-flex flex-row map-link mt-4"
-                                    // onClick = {() => {history.push()}}
                                 >
                                     <div className="circle-point"
                                     style={circleStyle}>

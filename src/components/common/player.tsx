@@ -1,8 +1,8 @@
-import React, { Component, useEffect, useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 
 import "../../css/player.css";
-import { AppState, IEnvState } from '../../types/interfaces';
+import { AppState } from '../../types/interfaces';
 
 interface IPlayerProps{
     inMenu?: boolean

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Ground from './ground';
 import Background from './background';
@@ -9,16 +9,10 @@ import EnvButton from './envbutton';
 function Environment() {
     return (
         <div className="w-100 h-100">
-            <BackToWorld
-                // showBack = {props.showBack}
-            />
+            <BackToWorld/>
             
-            <Ground
-                // moving = {props.moving}
-            />
-            <Background
-                // moving = {props.moving}
-            />
+            <Ground/>
+            <Background/>
 
             <EnvButton/>
         </div>

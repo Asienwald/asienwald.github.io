@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import '../../../css/misc.css'
 import '../../../css/carousel.css'
-import {Stack, Frame, Page} from 'framer'
+import { Frame, Page} from 'framer'
 import {motion} from 'framer-motion'
 import {  ICarousel, IAchievement, AppState } from '../../../types/interfaces';
 import { useDispatch, useSelector } from 'react-redux';
-import {AllActions} from '../../../actions';
 import {Link} from 'react-router-dom'
 
 

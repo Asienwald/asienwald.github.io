@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import {useDispatch, useSelector} from 'react-redux'
+import { useSelector} from 'react-redux'
 import {Frame, Page} from 'framer';
 import {motion} from 'framer-motion';
 import { AppState, ICarousel, IProject} from '../../../types/interfaces';
-import {AllActions} from '../../../actions';
 import '../../../css/carousel.css';
 import '../../../css/misc.css';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const ProjectCarousel: React.FC<ICarousel> = ({
@@ -15,9 +14,6 @@ const ProjectCarousel: React.FC<ICarousel> = ({
     const [currentPage, setCurrentPage] = useState<number>(0);
     const [cardPerPage, setCardPerPage] = useState<number>(6);
     const [pagesNum, setPagesNum] = useState<number>(0);
-
-    // const dispatch = useDispatch();
-    // const history = useHistory();
 
     const carouselItems: IProject[] = useSelector((state: AppState) => {
         return state.data.projects;
@@ -33,7 +29,6 @@ const ProjectCarousel: React.FC<ICarousel> = ({
     const changePagesNum = () => {
         let extraPage = (carouselItems.length % cardPerPage == 0)? 0: 1;
         setPagesNum((~~(carouselItems.length / cardPerPage) == 0)? 1 : ~~(carouselItems.length / cardPerPage) + extraPage)
-        // console.log(pagesNum);
     } 
 
     useEffect(() => {
@@ -49,7 +44,6 @@ const ProjectCarousel: React.FC<ICarousel> = ({
             setCardPerPage(2);
         }
         else if(window.innerWidth < 900){
-            // console.log("window smol!")
             setCardPerPage(4);
         }else{
             setCardPerPage(6);
@@ -75,14 +69,12 @@ const ProjectCarousel: React.FC<ICarousel> = ({
                             className="carousel-btn "
                             onClick={() => {
                                 ((currentPage - 1) < 0)?setCurrentPage(pagesNum - 1): setCurrentPage(currentPage -1)
-                                // setCurrentPage(currentPage - 1)
                             }}
                         />
                     </motion.div>
                     
                     <div className=" indicator-wrapper">
                         {[...Array(pagesNum)].map((val, index) => {
-                            // console.log(`creating new indicator!`)
                             return (
                                 <Frame
                                     // Visual & layout
@@ -104,7 +96,6 @@ const ProjectCarousel: React.FC<ICarousel> = ({
                                     // Required by React
                                     key={index}
                                     onClick={() => {
-                                        // console.log(`indicator ${index} pressed!`)
                                         setCurrentPage(index)
                                     }}
                                     className=""
@@ -144,8 +135,6 @@ const ProjectCarousel: React.FC<ICarousel> = ({
                 onChangePage={(current, previous) => {
                     setCurrentPage(current)
                 }}
-                // width="56vw"
-                // height="40vh"
                 center={false}
                 className=" page-container"
                 padding={0}
@@ -170,7 +159,6 @@ const ProjectCarousel: React.FC<ICarousel> = ({
                                                         layoutId={`project-image-${item.projectRoute}`}>
                                                         <motion.img
                                                             src={`/assets/projects/${item.imageUrlList[0]}.jpg`}
-                                                            // src={item.imageUrlList[0]}
                                                             onError = {(e:any) => {
                                                                 e.target.onerror = null;
                                                                 e.target.src = "/assets/default.jpg";
@@ -182,7 +170,6 @@ const ProjectCarousel: React.FC<ICarousel> = ({
                         
                                                     <div className="mt-2">
                                                         <p className="size-30 color-red">{item.projectTitle}</p>
-                                                        {/* <p className="size-20 color-grey">{item.issuedBy}</p> */}
                                                         <p className="size-20 color-grey">
                                                             {
                                                                 item.tags.join(", ")

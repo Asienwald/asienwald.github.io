@@ -1,4 +1,4 @@
-import { IAchievement, IChangeEnvAction, IChangeMovingAction, IProject, ISetBackWorld, ISetPlayerCenter, ISetPlayerInvert } from '../types/interfaces';
+import { IChangeEnvAction, IChangeMovingAction, ISetBackWorld, ISetPlayerCenter, ISetPlayerInvert } from '../types/interfaces';
 import  './actiontypes';
 import { CHANGE_ENV, CHANGE_MOVING, SET_BACKWORLD, SET_PLAYER_CENTER, SET_PLAYER_INVERT } from './actiontypes';
  

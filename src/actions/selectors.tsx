@@ -17,9 +17,7 @@ export function getProject(state: IDataState, projectRoute: string): IProject{
             return;
         }
     })
-    
     return project;
-    // return state.projects.filter((proj) => proj.projectRoute === projectRoute)[0];
 }
 
 export function getAchievement(state: IDataState, achievementRoute: string): IAchievement{

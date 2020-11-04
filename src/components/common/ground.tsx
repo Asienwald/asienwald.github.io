@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {useSelector} from 'react-redux'
-import {AppState, IEnvState} from '../../types/interfaces'
+import {AppState} from '../../types/interfaces'
 
 import '../../css/ground.css';
 
@@ -8,7 +8,6 @@ import '../../css/ground.css';
 function Ground() {
 
     const [ground, setGround] = useState<JSX.Element[]>([]);
-    // const [moving, setMoving] = useState(moving);
 
     const {moving, envBg} = useSelector((state: AppState) => {
         return state.env;

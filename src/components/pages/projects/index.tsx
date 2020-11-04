@@ -25,8 +25,6 @@ const ProjectsPage: React.FC<match> = ({
                         route = {route}
                     />
 
-                    
-                    
                 </PageWithContent>
                 
                 <ProjectsModal route={route} key={`projects-modal-${route}`}/>

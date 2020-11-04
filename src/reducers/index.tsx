@@ -1,5 +1,4 @@
 import { combineReducers } from 'redux'
-import { AppState } from '../types/interfaces';
 import envReducer from './envReducers'
 import dataReducer from './dataReducers';
 

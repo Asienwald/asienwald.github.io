@@ -2,9 +2,9 @@ import React from 'react';
 import {AnimateSharedLayout, motion} from 'framer-motion'
 import {useDispatch, useSelector} from 'react-redux'
 import {AppState} from '../../types/interfaces';
+import { AllActions } from '../../actions';
 import '../../css/misc.css'
 import '../../css/envbtn.css'
-import { AllActions } from '../../actions';
 
 const EnvButton = () => {
     const dispatch = useDispatch();

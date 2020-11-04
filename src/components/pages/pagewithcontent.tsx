@@ -1,6 +1,5 @@
 import { AnimatePresence } from 'framer-motion';
 import React from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Menu from '../common/menu';
 
 

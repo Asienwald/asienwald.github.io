@@ -12,10 +12,6 @@ function NotFound() {
                 btnString="Back to World Map"
             />
 
-            {/* <Player/>
-
-            <Environment/> */}
-
         </div>
     );
 }

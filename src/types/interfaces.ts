@@ -100,10 +100,6 @@ export interface IDataState{
     }
 }
 
-// export interface IModalState{
-//     achievementModal: IAchievement,
-//     projectModal: IProject
-// }
 
 export interface IEnvState{
     moving: boolean

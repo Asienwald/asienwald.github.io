@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { useHistory, useLocation } from 'react-router-dom';
+import { AppState } from '../../types/interfaces';
 import '../../css/misc.css';
-import { AppState, IEnvState } from '../../types/interfaces';
-import {motion} from 'framer';
 
 function BackToWorld() {
     const history = useHistory();
@@ -12,7 +11,6 @@ function BackToWorld() {
     const showBack = useSelector((state: AppState) => {
         return state.env.backToWorld
     })
-
 
     const backToWorld = () => {
         history.push("/worldmap")
@@ -24,12 +22,6 @@ function BackToWorld() {
 
     return (
         <div className="back-world"
-            // whileHover={{
-            //     scale: 1.1
-            // }}
-            // whileTap = {{
-            //     scale: 0.8
-            // }}
         >
             <div
                 onClick={() => {backToWorld()}}

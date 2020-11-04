@@ -33,11 +33,6 @@
     color: #ED2114;
 }
 
-/* fixed height for menu for worldmap */
-/* .menu{
-    height: 80vh;
-} */
-
 @media only screen and (max-width: 500px){
     .menu{
         min-height: 75vh;

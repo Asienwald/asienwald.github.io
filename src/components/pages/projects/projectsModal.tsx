@@ -15,7 +15,6 @@ interface IProjectsModal{
     route: string
 }
 
-
 // framer motion variants
 const textMotion = {
     rest:{
@@ -43,9 +42,6 @@ const arrowMotion = {
 const ProjectsModal: React.FC<IProjectsModal> = ({
     route
 }) => {
-    // const [isVisible, setIsVisble] = useState<boolean>(true);
-    // const dispatch = useDispatch();
-    // const route = match.params;
     const history = useHistory();
 
     const [selectedImage, setSelectedImage] = useState<string>("");
@@ -79,7 +75,6 @@ const ProjectsModal: React.FC<IProjectsModal> = ({
     const changePagesNum = () => {
         let extraPage = (imageUrlList.length % cardPerPage == 0)? 0: 1;
         setPagesNum((~~(imageUrlList.length / cardPerPage) == 0)? 1 : ~~(imageUrlList.length / cardPerPage) + extraPage)
-        // console.log(pagesNum);
     }
 
     useEffect(() => {
@@ -97,11 +92,7 @@ const ProjectsModal: React.FC<IProjectsModal> = ({
     }, [route])
 
     useEffect(() => {
-        // if(window.innerWidth < 500){
-        //     setCardPerPage(1);
-        // }
         if(window.innerWidth < 900){
-            // console.log("window smol!")
             setCardPerPage(2);
         }else{
             setCardPerPage(3);
@@ -316,7 +307,6 @@ const ProjectsModal: React.FC<IProjectsModal> = ({
                                                 return <p>{val}</p>
                                             })
                                         }
-                                        {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> */}
                                     </div>
                                 </motion.div>
                                 

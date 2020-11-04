@@ -3,9 +3,6 @@ import { useSelector } from 'react-redux';
 import '../../../css/education.css';
 import { AppState, ISchool } from '../../../types/interfaces';
 import School from './school';
-import SubSection from './subsection';
-
-
 
 
 const Education: React.FC = () => {
