@@ -102,7 +102,7 @@ function Map() {
                                 </div>
                                 <p className="size-45 my-auto ml-4">My Blog</p>
                             </div>
-                            <a href="https://github.com/Asienwald/asienwald.github.io" target="_blank">
+                            <a href="https://github.com/Asienwald/Platformer-Site" target="_blank">
                                 <div className="d-flex flex-row map-link mt-4"
                                 >
                                     <div className="circle-point"

@@ -3,7 +3,7 @@
     "name": "Kar Wei",
     "age": 18,
     "occupation": "Student studying IT Security at Singapore Polytechnic",
-    "status": "Studying to take the AWS Developer Associate certification",
+    "status": "Sharpening my Pen Testing skills in HTB",
     "skills": [
       "ReactJS w/ Typescript",
       "Redux",
@@ -14,7 +14,8 @@
       "Python",
       "AWS Cloud",
       "Firebase",
-      "Ethical Hacking"
+      "Ethical Hacking",
+      "FastAPI"
     ],
     "toolsUsed": [
       "Unity Game Engine",
@@ -37,17 +38,13 @@
               "sectionTitle": "Year 1",
               "bulletPoints": [
                 "director's honour roll",
-                "fundamentals of programming (dist)",
-                "mathematics (dist)",
-                "fundamentals of computing (dist)"
+                "Certificate of Academic Achievement 2020"
               ]
             },
             {
               "sectionTitle": "Year 2",
               "bulletPoints": [
-                "narrative thinking (dist)",
-                "infocomm security (dist)",
-                "linux administration and security (dist)"
+                "currently studying now"
               ]
             }
           ]
@@ -56,7 +53,6 @@
           "school of computing ambassadors (head of r&d team)",
           "DISM gryphons (member)",
           "seed student interest group (member)",
-          "symphonic band (member)",
           "japanese cultural club (member)"
         ],
         "awardsList": [
@@ -112,7 +108,7 @@
         "organisation": "Cyber Youth Singapore",
         "positionPeriod": "May 2020",
         "descriptionList": [
-          "Event Coordinator and Lead Lecturer for the Youth Cyber Exploration Programme lead by CYS in conjuntion with SP and CSA which attracted a total of 210 secondary school students from around Singapore.",
+          "Event Coordinator and Lead Lecturer for the Youth Cyber Exploration Programme lead by CYS in conjunction with SP and CSA which attracted a total of 210 secondary school students from around Singapore.",
           "Other roles include Content Creator and CTF Challenge Creator."
         ]
       },
@@ -233,6 +229,17 @@
         "descripList": [
           "This certification spanned a 4 day training course with a MCQ practical test on the 5th day which consists of theory based questions and practical based questions requiring us to physically interact with the lab machines through their VPN network.",
           "The marking scheme was new to me, as wrong answers would lower your overall score and not answering questions are actually better in some cases. Nevertheless, I managed to score a percentage of 81.33% out of 100%. 60% was required to pass."
+        ]
+      },
+      {
+        "achievementRoute": "aws-dev-associate-2020",
+        "issueDate": "Oct 2020",
+        "title": "AWS Certified Developer Associate",
+        "issuedBy": "Amazon Web Services",
+        "descripList": [
+          "Before this certification my cloud knowledge was laughable. Stephane Maarek's Udemy course helped loads in helping me gain a better understanding of many AWS services covered under this certification and ultimately helped me pass the exam",
+          "However, I felt that the course alone was not enough to get a better than average score on the exam and additional practice exams should be done.",
+          "All in all, I scored a 916 out of 1000 for the exam and is extremely happy with my decision to take up this certification course. Will definitely be looking at the other certification routes in the future!"
         ]
       }
     ]
@@ -419,29 +426,6 @@
         "This was an assignment done for school but I took it upon myself to add additional features, including a user interface built with Kivy.",
         "A server is run alongside the client program to serve food orders through the interface.",
         "The original assignment only asked for a command line interface for the client and server."
-      ]
-    },
-    {
-      "projectRoute": "cyberwargame-multiplayer",
-      "imageUrlList": [
-        "cyberwargame-1"
-      ],
-      "projectTitle": "Cyberwargame 3D Multiplayer",
-      "projectPeriod": "Ongoing",
-      "tags": [
-        "Game Dev 3D",
-        "Multiplayer",
-        "Unity"
-      ],
-      "builtWith":[
-        "Unity Game Engine",
-        "Mirror Networking"
-      ],
-      "projectLink": "https://github.com/Asienwald/cyberwargame-multiplayer",
-      "descripList":[
-        "A 3D Cyber Wargame tower defense multiplayer game set in a computeristic world with a cyber security theme.",
-        "This project was started earlier this year (2020) but placed on halt due to covid and other commitments.",
-        "I plan to setup a simple LAN server/client feature to allow for multiplaying through the use of Mirror, an open source networking for Unity."
       ]
     },
     {
