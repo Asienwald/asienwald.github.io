@@ -94,7 +94,7 @@
     "positionList": [
       {
         "role": "Director",
-        "division": "Talent Development Department",
+        "division": "Community Development Department",
         "organisation": "Cyber Youth Singapore",
         "positionPeriod": "Sept 2020 to Present",
         "descriptionList": [
@@ -128,7 +128,18 @@
   "achievements": {
     "awards": [
       {
-        "achievementRoute": "dir-honour-roll-2020",
+        "achievementRoute": "svrp-2020",
+        "issueDate": "Mar 2021",
+        "title": "SVRP 2020 Gold and Valedictorian",
+        "issuedBy": "Association of Information Security Professionals",
+        "descripList": [
+            "I was honoured to be attend the SVRP award ceremony as a gold award recipient and valedictorian for SVRP 2020.",
+            "The award ceremony included a dialogue session with Senior Minister of State Dr Janil Puthucheary on the interest in cybsecurity among youths in Singapore. Link below for some of the thoughts I shared during this event.",
+            "https://www.linkedin.com/posts/kar-wei-loh_cybersecurity-volunteering-community-activity-6781925412550385664-84G2"
+        ]
+      },
+      {
+        "achievementRoute": "dir-honour-roll-2019",
         "issueDate": "AY 2019/2020",
         "title": "Director's Honour Roll",
         "issuedBy": "Singapore Polytechnic",
