@@ -3,7 +3,7 @@
     "name": "Kar Wei",
     "age": 18,
     "occupation": "Student studying IT Security at Singapore Polytechnic",
-    "status": "Sharpening my Pen Testing skills in HTB",
+    "status": "Currently working to get my OSCP!",
     "skills": [
       "ReactJS w/ Typescript",
       "Redux",
@@ -13,12 +13,12 @@
       "MySQL",
       "Python",
       "AWS Cloud",
-      "Firebase",
-      "Ethical Hacking",
+      "Malware Analysis",
+      "Pentesting",
       "FastAPI"
     ],
     "toolsUsed": [
-      "Unity Game Engine",
+      "Unity in C#",
       "VSCode",
       "Android Studio",
       "Figma",
@@ -32,32 +32,33 @@
         "studyPeriod": "2019-Current",
         "studyScope": "Diploma in Infocomm Security Management",
         "academicComponent": {
-          "gpa": "3.95",
+          "gpa": "3.96",
           "sectionList": [
             {
               "sectionTitle": "Year 1",
               "bulletPoints": [
-                "director's honour roll",
+                "director's honour roll AY2019/2020",
                 "Certificate of Academic Achievement 2020"
               ]
             },
             {
               "sectionTitle": "Year 2",
               "bulletPoints": [
-                "currently studying now"
+                "director's honour roll AY2020/2021"
               ]
             }
           ]
         },
         "ccaList": [
-          "school of computing ambassadors (head of r&d team)",
+          "school of computing ambassadors (head of r&d team) 2020/2021",
           "DISM gryphons (member)",
           "seed student interest group (member)",
-          "japanese cultural club (member)"
+          "japanese cultural club Community Innovations projects head 2021/2022"
         ],
         "awardsList": [
           "dso diploma scholarship",
-          "singapore poly outstanding talent programme (SPOT)"
+          "singapore poly outstanding talent programme (SPOT)",
+          "SP Edge Scholars programme"
         ]
       },
       {
@@ -93,23 +94,34 @@
   "experience": {
     "positionList": [
       {
+        "role": "Govtech PTP Intern",
+        "division": "Temp",
+        "organisation": "Govtech",
+        "positionPeriod": "Apr 2021 to Present",
+        "descriptionList": [
+            "Full year internship under the Govtech PTP Programme, a special work-learn programme for year 3 students in SP",
+            "Went through a selection process including interview and assessment quizzes to be one of 2 students in the DISM cohort to be a part of this special programme"
+        ]
+      },
+      {
+        "role": "Python Developer and AWS Cloud Engineer",
+        "division": "NIL",
+        "organisation": "Swapie",
+        "positionPeriod": "Nov 2020 to Present",
+        "descriptionList": [
+            "Mostly worked on their backend server and infrastructure fully coded in Python",
+            "Also deployed and managed CI/CD solutions and hosting on AWS Cloud"
+        ]
+      },
+      {
         "role": "Director",
         "division": "Community Development Department",
         "organisation": "Cyber Youth Singapore",
         "positionPeriod": "Sept 2020 to Present",
         "descriptionList": [
-          "as the director of the talent development department in CYS, i am responsible for ensuring that youths in the cyber youth collective have constant access to opportunities to excel and develop themselves in pursuit of a career in cyber.",
-          "i guide and lead my members in the collective development team and collaboration team in developing and maintaining the talent development matrix (nest), liasing with external organisations and organising cyber events"
-        ]
-      },
-      {
-        "role": "Event Organiser",
-        "division": "YCEP 2020",
-        "organisation": "Cyber Youth Singapore",
-        "positionPeriod": "May 2020",
-        "descriptionList": [
-          "Event Coordinator and Lead Lecturer for the Youth Cyber Exploration Programme lead by CYS in conjunction with SP and CSA which attracted a total of 210 secondary school students from around Singapore.",
-          "Other roles include Content Creator and CTF Challenge Creator."
+          "Spearhead community development initiative to provide a safe ground for youths to explore cybersecurity with a projected reach of 1000+ youths",
+          "Liaise with community and industry partners to bring benefits to youths in tech",
+          "Regular speaks in outreach events to youths to spread cybersecurity awareness and introduce the youth development efforts of CYS"
         ]
       },
       {
