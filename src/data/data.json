@@ -53,7 +53,7 @@
           "school of computing ambassadors (head of r&d team) 2020/2021",
           "DISM gryphons (member)",
           "seed student interest group (member)",
-          "japanese cultural club Community Innovations projects head 2021/2022"
+          "japanese cultural club Community Involvement Programme (CIP) head 2021/2022"
         ],
         "awardsList": [
           "dso diploma scholarship",
@@ -94,8 +94,19 @@
   "experience": {
     "positionList": [
       {
-        "role": "Govtech PTP Intern",
-        "division": "Temp",
+        "role": "Tech Lead | Backend Developer",
+        "division": "CDD",
+        "organisation": "Cyber Youth Singapore",
+        "positionPeriod": "Jul 2021 to Present",
+        "descriptionList": [
+            "Tech lead for the NEST platform, an educational mobile app product aimed at educating and guiding youths within cybersecurity under the CYS Community Development Department's Learning and Engagement Matrix (LEM)",
+            "Setup and develop backend infrastructure on the cloud",
+            "Currently under NYC's Youth Tech Programme (YTP) as a Technical Specialist"
+        ]
+      },
+      {
+        "role": "Malware Analyst Intern",
+        "division": "MA",
         "organisation": "Govtech",
         "positionPeriod": "Apr 2021 to Present",
         "descriptionList": [
@@ -105,16 +116,16 @@
       },
       {
         "role": "Python Developer and AWS Cloud Engineer",
-        "division": "NIL",
-        "organisation": "Swapie",
-        "positionPeriod": "Nov 2020 to Present",
+        "division": "PT",
+        "organisation": "Gifting.sg",
+        "positionPeriod": "Nov 2020 to Jul 2021",
         "descriptionList": [
             "Mostly worked on their backend server and infrastructure fully coded in Python",
             "Also deployed and managed CI/CD solutions and hosting on AWS Cloud"
         ]
       },
       {
-        "role": "Director",
+        "role": "Director (Volunteer)",
         "division": "Community Development Department",
         "organisation": "Cyber Youth Singapore",
         "positionPeriod": "Sept 2020 to Present",
@@ -125,7 +136,7 @@
         ]
       },
       {
-        "role": "Student Intern",
+        "role": "Red Teaming Intern",
         "division": "Information Division",
         "organisation": "DSO National Laboratories",
         "positionPeriod": "Aug 2019 to Oct 2019",
