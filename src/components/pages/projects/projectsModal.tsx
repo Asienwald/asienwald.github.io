@@ -332,6 +332,8 @@ const ProjectsModal: React.FC<IProjectsModal> = ({
                     
                 )}
 
+                
+
             </AnimatePresence>
         </div>
     );

@@ -9,7 +9,7 @@ import '../../../css/findme.css';
 
 const FindMePage = () => {
 
-    const {email, discord, linkedinLink, githubLink} = useSelector((state: AppState) => {
+    const {email, linkedinLink, githubLink} = useSelector((state: AppState) => {
         return state.data.contact;
     })
 
@@ -24,10 +24,6 @@ const FindMePage = () => {
                     <div className="col-12 d-flex flex-row text-white mb-4">
                         <i className="fas fa-envelope findme-icon "></i>
                         <p className="size-25 khyay mt-auto">{email}</p>
-                    </div>
-                    <div className="col-12 d-flex flex-row text-white">
-                        <i className="fab fa-discord text-white findme-icon" ></i>
-                        <p className="size-25 khyay mt-auto">{discord}</p>
                     </div>
                     <div className=" col-12 d-flex flex-row mt-4">
 
