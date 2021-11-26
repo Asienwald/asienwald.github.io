@@ -84,7 +84,6 @@ export interface IProject{
 
 export interface IContact{
     email: string,
-    discord: string,
     linkedinLink: string,
     githubLink: string
 }
