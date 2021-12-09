@@ -32,7 +32,7 @@
         "studyPeriod": "2019-Current",
         "studyScope": "Diploma in Infocomm Security Management",
         "academicComponent": {
-          "gpa": "3.96",
+          "gpa": "3.92",
           "sectionList": [
             {
               "sectionTitle": "Year 1",
@@ -94,6 +94,25 @@
   "experience": {
     "positionList": [
       {
+        "role": "Innovation and Research Intern",
+        "division": "I&R Team",
+        "organisation": "Govtech",
+        "positionPeriod": "Nov 2021 to Present",
+        "descriptionList": [
+            "Full year internship under the Govtech PTP Programme, a special work-learn programme for year 3 students in SP"
+        ]
+      },
+      {
+        "role": "Vulnerability Disclosure Intern",
+        "division": "CVD Team",
+        "organisation": "Govtech",
+        "positionPeriod": "Aug 2021 to Nov 2021",
+        "descriptionList": [
+            "Full year internship under the Govtech PTP Programme, a special work-learn programme for year 3 students in SP",
+            "Worked on Govtech's VDP Bug Bounty Programme"
+        ]
+      },
+      {
         "role": "Tech Lead | Backend Developer",
         "division": "CDD",
         "organisation": "Cyber Youth Singapore",
@@ -106,12 +125,12 @@
       },
       {
         "role": "Malware Analyst Intern",
-        "division": "MA",
+        "division": "GITSIR MA",
         "organisation": "Govtech",
-        "positionPeriod": "Apr 2021 to Present",
+        "positionPeriod": "Apr 2021 to Aug 2021",
         "descriptionList": [
             "Full year internship under the Govtech PTP Programme, a special work-learn programme for year 3 students in SP",
-            "Went through a selection process including interview and assessment quizzes to be one of 2 students in the DISM cohort to be a part of this special programme"
+            "Worked on a series of projects relating to malware reverse engineering, including an automated malware unpacking tool titled FIREWORKSPARTY that I'm looking to continue working on after my internship!"
         ]
       },
       {
@@ -150,6 +169,18 @@
   },
   "achievements": {
     "awards": [
+      {
+        "achievementRoute": "wss-2021",
+        "issueDate": "Oct 2021",
+        "title": "World Skills Singapore 2021 Cybersecurity Domain - Bronze",
+        "issuedBy": "World Skills Singapore Council",
+        "descripList": [
+            "After months of preparation with my WSS partner, Ethan under the guidance of lecturers, Mr Boris and Mr Timothy, we were able to represent SP at the biannual national competition World Skills Singapore 2021 under the Cybersecurity Domain.",
+            "It was tough, and we managed to walk away with Bronze together with a cash prize of SGD$1500!",
+            "Even though this was during the pandemic and many restrictions were in place, I still managed to meet new people and learn new skills throughout the event, including securing cisco hardware that I have never done in school.",
+            "https://www.worldskills.sg/events/worldskills-singapore-2021"
+        ]
+      },
       {
         "achievementRoute": "svrp-2020",
         "issueDate": "Mar 2021",
