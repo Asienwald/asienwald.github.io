@@ -1,9 +1,9 @@
 ﻿{
   "stats": {
     "name": "Kar Wei",
-    "age": 18,
+    "age": 19,
     "occupation": "Student studying IT Security at Singapore Polytechnic",
-    "status": "Currently working to get my OSCP!",
+    "status": "Currently exploring Azure",
     "skills": [
       "ReactJS w/ Typescript",
       "Redux",
