@@ -1,0 +1,24 @@
+.env-btn{
+    position: fixed;
+    bottom: 2vh;
+    left: 2vw;
+    width: 3vw;
+    height: 3vw;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px){
+    .env-btn{
+        width: 7vw;
+        height: 7vw;
+        left: 3vw;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 900px){
+    .env-btn{
+        width: 5vw;
+        height: 5vw;
+        left: 3vw;
+        bottom: 1vh;
+    }
+}
