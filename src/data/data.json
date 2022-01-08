@@ -275,15 +275,25 @@
     ],
     "certs": [
       {
-        "achievementRoute": "cmls-2019",
-        "issueDate": "Oct 2019",
-        "title": "Certified Machine Learning Specialist",
-        "issuedBy": "Global Science and Technology Forum",
+        "achievementRoute": "oscp-2022",
+        "issueDate": "Jan 2022",
+        "title": "Offensive Security Certified Professional (OSCP)",
+        "issuedBy": "Offensive Security",
         "descripList": [
-          "This certification required participants to attend a 4 day training course, with a final theory MCQ test at the end and a 2 week project to be submitted before our results would be announced and our cert presented to us.",
-          "I decided to do a project on Natural Language Processing, and built a chatbot from scratch using Keras in Python. I had a scored 87.5% on my MCQ and 86% on my project work component.",
-          "The reason why I took this course was due to the fact that I was interning at DSO at that time, and my project was basically split between red teaming and deep learning. I was mainly working on the red teaming portion, though eventually my supervisor allowed me to join in on the deep learning part after I had learnt more about ML concepts through this cert.",
-          "This cert was also fully subsidised under the IMDA Citrep+ Scheme."
+          "After months of pwning over 80+ machines across PWK Labs, HackTheBox and Proving Grounds, I finally passed my exam on 5th January 2022 while interning at Govtech for my final year in SP, attaining 80 points in 6 hours!!",
+          "This was probably the hardest I had worked for any single certification, and the takeaways I got was tremendous.",
+          "I am definitely looking forward to taking up more certs from Offensive Security!"
+        ]
+      },
+      {
+        "achievementRoute": "aws-dev-associate-2020",
+        "issueDate": "Oct 2020",
+        "title": "AWS Certified Developer Associate",
+        "issuedBy": "Amazon Web Services",
+        "descripList": [
+          "Before this certification my cloud knowledge was laughable. Stephane Maarek's Udemy course helped loads in helping me gain a better understanding of many AWS services covered under this certification and ultimately helped me pass the exam",
+          "However, I felt that the course alone was not enough to get a better than average score on the exam and additional practice exams should be done.",
+          "All in all, I scored a 916 out of 1000 for the exam and is extremely happy with my decision to take up this certification course. Will definitely be looking at the other certification routes in the future!"
         ]
       },
       {
@@ -297,16 +307,18 @@
         ]
       },
       {
-        "achievementRoute": "aws-dev-associate-2020",
-        "issueDate": "Oct 2020",
-        "title": "AWS Certified Developer Associate",
-        "issuedBy": "Amazon Web Services",
+        "achievementRoute": "cmls-2019",
+        "issueDate": "Oct 2019",
+        "title": "Certified Machine Learning Specialist",
+        "issuedBy": "Global Science and Technology Forum",
         "descripList": [
-          "Before this certification my cloud knowledge was laughable. Stephane Maarek's Udemy course helped loads in helping me gain a better understanding of many AWS services covered under this certification and ultimately helped me pass the exam",
-          "However, I felt that the course alone was not enough to get a better than average score on the exam and additional practice exams should be done.",
-          "All in all, I scored a 916 out of 1000 for the exam and is extremely happy with my decision to take up this certification course. Will definitely be looking at the other certification routes in the future!"
+          "This certification required participants to attend a 4 day training course, with a final theory MCQ test at the end and a 2 week project to be submitted before our results would be announced and our cert presented to us.",
+          "I decided to do a project on Natural Language Processing, and built a chatbot from scratch using Keras in Python. I had a scored 87.5% on my MCQ and 86% on my project work component.",
+          "The reason why I took this course was due to the fact that I was interning at DSO at that time, and my project was basically split between red teaming and deep learning. I was mainly working on the red teaming portion, though eventually my supervisor allowed me to join in on the deep learning part after I had learnt more about ML concepts through this cert.",
+          "This cert was also fully subsidised under the IMDA Citrep+ Scheme."
         ]
       }
+      
     ]
   },
   "projects": [
